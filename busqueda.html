@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Librería Letras Vivas | Búsqueda</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.6/dist/css/uikit.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.6/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.6/dist/js/uikit-icons.min.js"></script>
+</head>
+<body>
+
+  <!-- ====================== CABECERA ====================== -->
+  <header>
+    <div class="lv-topbar">
+      <div class="uk-container">
+        <div class="uk-grid-small uk-flex-middle" uk-grid>
+          <div class="uk-width-auto">
+            <a href="index.html" class="lv-logo">
+              <span uk-icon="icon: bookmark; ratio: 1.5" class="lv-logo-icon"></span>
+              <span class="uk-visible@s">Librería<br />Letras Vivas<span>Tu librería en línea</span></span>
+            </a>
+          </div>
+          <div class="uk-width-expand">
+            <form class="lv-search uk-flex" action="busqueda.html" method="get">
+              <input class="uk-input uk-form-blank" type="search" name="q"
+                     placeholder="Buscar libro, autor, categoría..." aria-label="Buscar" value="fantasía" />
+              <button class="uk-button uk-button-text uk-margin-small-right" type="submit" uk-icon="icon: search"></button>
+            </form>
+          </div>
+          <div class="uk-width-auto">
+            <a href="carrito.html" class="lv-cart-link">
+              <span uk-icon="icon: cart"></span> Carrito <span class="uk-badge">3</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="lv-navbar uk-navbar-container" uk-navbar>
+      <div class="uk-container">
+        <div class="uk-navbar-left">
+          <ul class="uk-navbar-nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li>
+              <a href="catalogo.html">Categorías <span uk-icon="icon: triangle-down"></span></a>
+              <div class="uk-navbar-dropdown">
+                <ul class="uk-nav uk-navbar-dropdown-nav">
+                  <li><a href="catalogo.html">Novela</a></li>
+                  <li><a href="catalogo.html">Fantasía</a></li>
+                  <li><a href="catalogo.html">Ciencia Ficción</a></li>
+                  <li><a href="catalogo.html">Misterio</a></li>
+                  <li><a href="catalogo.html">Romance</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="catalogo.html">Autores</a></li>
+            <li><a href="catalogo.html">Novedades</a></li>
+            <li><a href="index.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ====================== MIGAS DE PAN ====================== -->
+  <div class="lv-breadcrumb">
+    <div class="uk-container">
+      <ul class="uk-breadcrumb uk-margin-remove">
+        <li><a href="index.html">Inicio</a></li>
+        <li><span>Búsqueda</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ====================== CONTENIDO ====================== -->
+  <main class="uk-container uk-margin-top">
+
+    <!-- Campo de búsqueda principal -->
+    <form class="uk-margin-medium-bottom" action="busqueda.html" method="get">
+      <div class="uk-grid-small uk-flex-middle" uk-grid>
+        <div class="uk-width-expand">
+          <div class="uk-inline uk-width-1-1">
+            <span class="uk-form-icon" uk-icon="icon: search"></span>
+            <input class="uk-input uk-form-large" type="search" name="q" value="fantasía"
+                   placeholder="Ingrese palabras clave: título, autor o categoría" />
+          </div>
+        </div>
+        <div class="uk-width-auto">
+          <button class="uk-button uk-button-primary uk-button-large" type="submit">Buscar</button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Encabezado de resultados -->
+    <div class="uk-margin-bottom">
+      <h2 class="lv-section-title uk-margin-remove-bottom">Resultados para: «fantasía»</h2>
+      <p class="uk-text-meta lv-mono">Se encontraron 4 resultados</p>
+    </div>
+
+    <!-- Lista de resultados -->
+    <div class="uk-child-width-1-2 uk-child-width-1-4@m uk-grid-small" uk-grid>
+
+      <div>
+        <div class="lv-book-card">
+          <img class="lv-book-cover" src="https://covers.openlibrary.org/b/id/8567176-L.jpg" alt="El nombre del viento" />
+          <div class="lv-book-body">
+            <p class="lv-book-title">El Nombre del Viento</p>
+            <p class="lv-book-author">Patrick Rothfuss</p>
+            <span class="uk-label">Fantasía</span>
+            <div class="uk-flex uk-flex-between uk-flex-middle uk-margin-small-top">
+              <span class="lv-price">₡8.500</span>
+              <a href="detalle.html" class="uk-button uk-button-default uk-button-small">Detalle</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="lv-book-card">
+          <img class="lv-book-cover" src="https://covers.openlibrary.org/b/id/10521270-L.jpg" alt="El Hobbit" />
+          <div class="lv-book-body">
+            <p class="lv-book-title">El Hobbit</p>
+            <p class="lv-book-author">J. R. R. Tolkien</p>
+            <span class="uk-label">Fantasía</span>
+            <div class="uk-flex uk-flex-between uk-flex-middle uk-margin-small-top">
+              <span class="lv-price">₡10.500</span>
+              <a href="detalle.html" class="uk-button uk-button-default uk-button-small">Detalle</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="lv-book-card">
+          <img class="lv-book-cover" src="https://covers.openlibrary.org/b/id/12003830-L.jpg" alt="Juego de Tronos" />
+          <div class="lv-book-body">
+            <p class="lv-book-title">Juego de Tronos</p>
+            <p class="lv-book-author">George R. R. Martin</p>
+            <span class="uk-label">Fantasía</span>
+            <div class="uk-flex uk-flex-between uk-flex-middle uk-margin-small-top">
+              <span class="lv-price">₡11.900</span>
+              <a href="detalle.html" class="uk-button uk-button-default uk-button-small">Detalle</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="lv-book-card">
+          <img class="lv-book-cover" src="https://covers.openlibrary.org/b/id/240727-L.jpg" alt="Harry Potter y la piedra filosofal" />
+          <div class="lv-book-body">
+            <p class="lv-book-title">Harry Potter y la piedra filosofal</p>
+            <p class="lv-book-author">J. K. Rowling</p>
+            <span class="uk-label">Fantasía</span>
+            <div class="uk-flex uk-flex-between uk-flex-middle uk-margin-small-top">
+              <span class="lv-price">₡9.300</span>
+              <a href="detalle.html" class="uk-button uk-button-default uk-button-small">Detalle</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Paginación -->
+    <ul class="uk-pagination uk-flex-center uk-margin-large-top">
+      <li class="uk-disabled"><span><span uk-pagination-previous></span></span></li>
+      <li class="uk-active"><span>1</span></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#"><span uk-pagination-next></span></a></li>
+    </ul>
+  </main>
+
+  <!-- ====================== PIE DE PÁGINA ====================== -->
+  <footer class="lv-footer">
+    <div class="uk-container">
+      <div class="uk-child-width-1-1 uk-child-width-1-3@m uk-grid-large" uk-grid>
+        <div>
+          <h4>Librería Letras Vivas</h4>
+          <p>Promoviendo la lectura desde 2010. Más de 25.000 títulos nacionales e internacionales con envío a todo Costa Rica.</p>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <ul class="uk-list">
+            <li><span uk-icon="icon: location"></span> Av. Central, San José, Costa Rica</li>
+            <li><span uk-icon="icon: receiver"></span> +506 2222-3344</li>
+            <li><span uk-icon="icon: mail"></span> info@letrasvivas.cr</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Enlaces</h4>
+          <ul class="uk-list">
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="busqueda.html">Búsqueda</a></li>
+            <li><a href="carrito.html">Carrito de compras</a></li>
+            <li><a href="index.html">Política de privacidad</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="lv-footer-bottom">
+        © 2026 Librería Letras Vivas. Todos los derechos reservados. | Diseñado por el equipo de desarrollo Letras Vivas.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
