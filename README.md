@@ -39,10 +39,3 @@ cd libreria-letras-vivas
 python3 -m http.server 8000
 # Visite http://localhost:8000
 ```
-
-## Publicación
-
-El prototipo se publica como sitio estático. Puede subirse a GitHub Pages, Netlify
-o Vercel arrastrando la carpeta.
-
-**Enlace al sitio publicado:** _<pendiente de publicar — colocar aquí la URL>_
