@@ -1,6 +1,6 @@
 /* ===========================================================
-   Librería Letras Vivas - Estilos personalizados
-   Complementan el framework UIKit
+   Librería Letras Vivas
+   HTML + Bootstrap + CSS propio
    =========================================================== */
 
 :root {
@@ -11,20 +11,43 @@
   --color-cta-hover: #d64545;
   --color-fondo: #f7f5f0;
   --color-tarjeta: #ffffff;
+  --color-texto: #2d2d2d;
   --color-texto-suave: #7f8c8d;
   --color-dorado: #e0c9a6;
+  --color-borde: #e2ddd2;
+
   --radio: 12px;
   --sombra-suave: 0 4px 24px rgba(44, 62, 80, 0.08);
+
+  --fuente-titulos: "Helvetica Neue", Arial, sans-serif;
+  --fuente-texto: "Georgia", "Times New Roman", serif;
+}
+
+/* ---------- Base ---------- */
+* {
+  box-sizing: border-box;
 }
 
 body {
+  margin: 0;
   background-color: var(--color-fondo);
-  color: #2d2d2d;
-  font-family: "Georgia", "Times New Roman", serif;
+  color: var(--color-texto);
+  font-family: var(--fuente-texto);
   line-height: 1.6;
 }
 
-/* ---------- Cabecera ---------- */
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ===========================================================
+   Cabecera
+   =========================================================== */
+
 .lv-topbar {
   background-color: var(--color-primario-oscuro);
   color: #fff;
@@ -35,27 +58,58 @@ body {
 .lv-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   color: #fff;
-  font-weight: 700;
   font-size: 1.25rem;
+  font-weight: 700;
   line-height: 1.1;
+}
+
+.lv-logo:hover {
+  color: #fff;
 }
 
 .lv-logo span {
   display: block;
+  color: var(--color-dorado);
   font-size: 0.7rem;
   font-weight: 400;
   letter-spacing: 2px;
-  color: #e0c9a6;
   text-transform: uppercase;
 }
 
-.lv-logo-icon {
-  font-size: 1.8rem;
-  color: #e0c9a6;
+.lv-logo-libro {
+  position: relative;
+  width: 42px;
+  height: 48px;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, var(--color-acento), var(--color-cta));
+  border-radius: 5px 12px 12px 5px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
 }
 
+.lv-logo-libro::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 7px;
+  width: 3px;
+  height: 34px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.lv-logo-libro span {
+  position: absolute;
+  right: 8px;
+  bottom: 10px;
+  width: 17px;
+  height: 3px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+/* Buscador */
 .lv-search {
   background: #fff;
   border-radius: 30px;
@@ -66,88 +120,562 @@ body {
 .lv-search input {
   border: none;
   background: transparent;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--fuente-titulos);
   font-size: 0.95rem;
+  box-shadow: none;
 }
 
-.lv-search button {
+.lv-search input:focus {
+  box-shadow: none;
+}
+
+.lv-search-btn {
+  border: none;
+  color: var(--color-acento);
+  font-family: var(--fuente-titulos);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.lv-search-btn:hover {
   color: var(--color-primario);
 }
 
+/* Carrito */
 .lv-cart-link {
-  color: #fff !important;
+  color: #fff;
+  font-family: var(--fuente-titulos);
   font-weight: 600;
 }
 
-.lv-cart-link .uk-badge {
+.lv-cart-link:hover {
+  color: var(--color-dorado);
+}
+
+.lv-cart-badge {
+  margin-left: 4px;
   background-color: var(--color-acento);
 }
 
-/* ---------- Navegación global ---------- */
-nav.lv-navbar.uk-navbar-container {
-  background-color: var(--color-primario) !important;
+/* ===========================================================
+   Navegación centrada
+   =========================================================== */
+
+.lv-navbar {
+  background-color: var(--color-primario);
   border-bottom: 3px solid var(--color-acento);
+  padding: 0;
 }
 
-nav.lv-navbar .uk-navbar-nav > li > a {
-  color: #f5f5f5 !important;
-  text-transform: uppercase;
+.lv-navbar .container {
+  justify-content: center;
+}
+
+.lv-navbar .navbar-collapse {
+  justify-content: center;
+}
+
+.lv-navbar .navbar-nav {
+  width: 100%;
+  justify-content: center;
+}
+
+.lv-navbar .nav-item {
+  text-align: center;
+}
+
+.lv-navbar .nav-link {
+  color: #f5f5f5;
+  font-family: var(--fuente-titulos);
   font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 1.2px;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  min-height: 52px;
-  padding: 0 18px;
-  transition: color 0.2s ease, background-color 0.2s ease;
+  padding: 17px 18px;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-nav.lv-navbar .uk-navbar-nav > li > a:hover,
-nav.lv-navbar .uk-navbar-nav > li.uk-active > a {
-  color: #fff !important;
+.lv-navbar .nav-link:hover,
+.lv-navbar .nav-link.active {
+  color: #fff;
   background-color: rgba(255, 255, 255, 0.08);
 }
 
-nav.lv-navbar .uk-navbar-nav > li.uk-active > a {
+.lv-navbar .nav-link.active {
   box-shadow: inset 0 -3px 0 var(--color-acento);
 }
 
-nav.lv-navbar .uk-navbar-dropdown {
-  border-radius: var(--radio);
-  box-shadow: var(--sombra-suave);
+.lv-navbar .navbar-brand {
+  color: #fff;
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
 }
 
-/* ---------- Migas de pan ---------- */
-.lv-breadcrumb {
+.lv-toggler {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.lv-toggler .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.dropdown-menu {
+  border: none;
+  border-radius: var(--radio);
+  box-shadow: var(--sombra-suave);
+  text-align: center;
+}
+
+.dropdown-item {
+  font-family: var(--fuente-titulos);
+}
+
+.dropdown-item:hover {
   background-color: #ece8df;
-  padding: 8px 0;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: var(--color-primario);
+}
+
+/* ===========================================================
+   Botones
+   =========================================================== */
+
+.lv-btn-cta,
+.lv-btn-outline,
+.lv-btn-detail {
+  border-radius: 6px;
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+  transition: background-color 0.2s ease, transform 0.15s ease, color 0.2s ease;
+}
+
+.lv-btn-cta {
+  background-color: var(--color-cta);
+  color: #fff;
+  border: none;
   font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  padding: 12px 28px;
+  text-transform: uppercase;
 }
 
-/* ---------- Barra lateral ---------- */
-.lv-sidebar {
-  background-color: var(--color-tarjeta);
-  border: 1px solid #e2ddd2;
-  border-radius: var(--radio);
-  padding: 20px;
+.lv-btn-cta:hover {
+  background-color: var(--color-cta-hover);
+  color: #fff;
+  transform: translateY(-1px);
 }
 
-.lv-sidebar h3,
-.lv-sidebar .uk-h4 {
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  border-bottom: 2px solid var(--color-acento);
-  padding-bottom: 8px;
-  margin-top: 0;
+.lv-btn-outline {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  padding: 10px 26px;
+  text-transform: uppercase;
 }
 
-/* ---------- Tarjetas de libro ---------- */
-.lv-book-card {
-  background-color: var(--color-tarjeta);
-  border: 1px solid #e2ddd2;
-  border-radius: var(--radio);
+.lv-btn-outline:hover {
+  background-color: #fff;
+  color: var(--color-primario);
+  transform: translateY(-1px);
+}
+
+.lv-btn-detail {
+  border: 1px solid #d8d0c3;
+  background-color: #fff;
+  color: var(--color-primario);
+}
+
+.lv-btn-detail:hover {
+  background-color: var(--color-primario);
+  border-color: var(--color-primario);
+  color: #fff;
+}
+
+/* ===========================================================
+   Home
+   =========================================================== */
+
+.lv-home-hero {
+  background:
+    radial-gradient(circle at top left, rgba(224, 201, 166, 0.28), transparent 32%),
+    linear-gradient(135deg, #2c3e50 0%, #344f67 52%, #f7f5f0 52%, #f7f5f0 100%);
+  padding: 78px 0 70px;
   overflow: hidden;
+}
+
+.lv-home-label {
+  color: var(--color-dorado);
+  font-family: var(--fuente-titulos);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.lv-home-hero h1 {
+  max-width: 720px;
+  margin: 0 0 22px;
+  color: #fff;
+  font-family: var(--fuente-titulos);
+  font-size: clamp(2.4rem, 5vw, 4.7rem);
+  font-weight: 800;
+  line-height: 0.98;
+}
+
+.lv-home-description {
+  max-width: 610px;
+  margin: 0 0 30px;
+  color: #dce4ec;
+  font-size: 1.15rem;
+}
+
+.lv-home-actions,
+.lv-home-benefits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.lv-home-actions {
+  margin-bottom: 34px;
+}
+
+.lv-home-benefits div {
+  min-width: 132px;
+  padding: 14px 18px;
+  border: 1px solid rgba(224, 201, 166, 0.35);
+  border-radius: var(--radio);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+}
+
+.lv-home-benefits strong,
+.lv-home-benefits span {
+  display: block;
+  font-family: var(--fuente-titulos);
+}
+
+.lv-home-benefits strong {
+  color: #fff;
+  font-size: 1.45rem;
+  line-height: 1;
+}
+
+.lv-home-benefits span {
+  margin-top: 5px;
+  color: #dce4ec;
+  font-size: 0.78rem;
+}
+
+/* Libro decorativo */
+.lv-book-visual,
+.lv-big-book,
+.lv-mini-book {
+  position: relative;
+}
+
+.lv-book-visual {
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lv-big-book {
+  width: 245px;
+  height: 325px;
+  transform: rotate(-7deg);
+  z-index: 2;
+}
+
+.lv-big-book-cover {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: 18px 28px 28px 18px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.2), transparent 35%),
+    linear-gradient(145deg, var(--color-primario-oscuro), var(--color-primario) 52%, var(--color-acento));
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.28);
+}
+
+.lv-big-book-cover::before,
+.lv-big-book-cover::after {
+  content: "";
+  position: absolute;
+}
+
+.lv-big-book-cover::before {
+  left: 24px;
+  top: 0;
+  width: 8px;
   height: 100%;
+  background-color: rgba(255, 255, 255, 0.14);
+}
+
+.lv-big-book-cover::after {
+  right: -40px;
+  top: 36px;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background-color: rgba(224, 201, 166, 0.18);
+}
+
+.lv-cover-lines {
+  position: absolute;
+  top: 38px;
+  left: 42px;
+}
+
+.lv-cover-lines span {
+  display: block;
+  height: 7px;
+  margin-bottom: 12px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.65);
+}
+
+.lv-cover-lines span:nth-child(1) {
+  width: 90px;
+}
+
+.lv-cover-lines span:nth-child(2) {
+  width: 65px;
+}
+
+.lv-cover-lines span:nth-child(3) {
+  width: 110px;
+  opacity: 0.35;
+}
+
+.lv-cover-title {
+  position: absolute;
+  left: 42px;
+  bottom: 38px;
+  z-index: 2;
+  color: #fff;
+  font-family: var(--fuente-titulos);
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.lv-big-book-pages {
+  position: absolute;
+  right: -18px;
+  top: 20px;
+  z-index: -1;
+  width: 36px;
+  height: 288px;
+  border-radius: 0 18px 18px 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    #fffdf8 0,
+    #fffdf8 8px,
+    var(--color-dorado) 9px
+  );
+  box-shadow: 8px 14px 28px rgba(0, 0, 0, 0.18);
+}
+
+.lv-book-base {
+  position: absolute;
+  bottom: 34px;
+  width: 285px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: rgba(44, 62, 80, 0.28);
+  filter: blur(8px);
+}
+
+.lv-floating-note {
+  position: absolute;
+  z-index: 3;
+  padding: 13px 18px;
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio);
+  background-color: #fff;
+  color: var(--color-primario);
+  font-family: var(--fuente-titulos);
+  font-size: 0.85rem;
+  font-weight: 800;
   box-shadow: var(--sombra-suave);
+}
+
+.lv-note-one {
+  top: 70px;
+  left: 18px;
+  transform: rotate(5deg);
+}
+
+.lv-note-two {
+  right: 12px;
+  bottom: 96px;
+  transform: rotate(-4deg);
+}
+
+/* Secciones */
+.lv-home-section,
+.lv-home-banner-section {
+  padding: 68px 0;
+  background-color: var(--color-fondo);
+}
+
+.lv-home-section-soft {
+  background-color: #ece8df;
+}
+
+.lv-home-section-header {
+  max-width: 660px;
+  margin: 0 auto 34px;
+  text-align: center;
+}
+
+.lv-home-section-header .lv-home-label {
+  color: var(--color-acento);
+}
+
+.lv-home-section-header h2,
+.lv-home-banner h2,
+.lv-section-title {
+  font-family: var(--fuente-titulos);
+  font-weight: 800;
+}
+
+.lv-home-section-header h2 {
+  margin: 0 0 10px;
+  color: var(--color-primario);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+}
+
+.lv-home-section-header p,
+.lv-page-lead {
+  color: var(--color-texto-suave);
+  font-size: 1rem;
+}
+
+.lv-home-section-header p {
+  margin: 0;
+}
+
+/* Categorías */
+.lv-cat-tile,
+.lv-book-card,
+.lv-sidebar,
+.lv-summary,
+.lv-form-card,
+.lv-table-card {
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio);
+  background-color: var(--color-tarjeta);
+  box-shadow: var(--sombra-suave);
+}
+
+.lv-cat-tile {
+  display: block;
+  min-height: 210px;
+  padding: 24px 14px 20px;
+  color: var(--color-primario);
+  font-family: var(--fuente-titulos);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.lv-cat-tile:hover {
+  background-color: var(--color-primario);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(44, 62, 80, 0.18);
+}
+
+.lv-cat-tile strong,
+.lv-cat-tile span {
+  display: block;
+}
+
+.lv-cat-tile strong {
+  margin-top: 14px;
+  margin-bottom: 4px;
+  color: inherit;
+  font-size: 1rem;
+}
+
+.lv-cat-tile span {
+  color: var(--color-texto-suave);
+  font-size: 0.78rem;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+.lv-cat-tile:hover span {
+  color: #dce4ec;
+}
+
+.lv-mini-book {
+  width: 60px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 7px 14px 14px 7px;
+  box-shadow: 0 12px 22px rgba(44, 62, 80, 0.18);
+  transition: transform 0.2s ease;
+}
+
+.lv-cat-tile:hover .lv-mini-book {
+  transform: translateY(-4px) rotate(-3deg);
+}
+
+.lv-mini-book::before,
+.lv-mini-book::after {
+  content: "";
+  position: absolute;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.55);
+}
+
+.lv-mini-book::before {
+  left: 9px;
+  top: 8px;
+  width: 4px;
+  height: 62px;
+}
+
+.lv-mini-book::after {
+  right: 9px;
+  bottom: 12px;
+  width: 24px;
+  height: 4px;
+}
+
+.lv-mini-novela {
+  background: linear-gradient(145deg, #8b3e2f, #c0392b);
+}
+
+.lv-mini-fantasia {
+  background: linear-gradient(145deg, #51325f, #9b6bb3);
+}
+
+.lv-mini-ciencia {
+  background: linear-gradient(145deg, #224f63, #5798a8);
+}
+
+.lv-mini-misterio {
+  background: linear-gradient(145deg, #222831, #5b6670);
+}
+
+.lv-mini-romance {
+  background: linear-gradient(145deg, #8e304d, #e85d7a);
+}
+
+/* Tarjetas de libros */
+.lv-book-card {
+  height: 100%;
+  overflow: hidden;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
@@ -158,7 +686,7 @@ nav.lv-navbar .uk-navbar-dropdown {
 
 .lv-book-cover {
   width: 100%;
-  height: 220px;
+  height: 250px;
   object-fit: cover;
   background-color: #d9d3c7;
 }
@@ -167,24 +695,24 @@ nav.lv-navbar .uk-navbar-dropdown {
   padding: 12px 14px 16px;
 }
 
+.lv-book-title,
+.lv-price,
+.lv-mono {
+  font-family: var(--fuente-titulos);
+}
+
 .lv-book-title {
+  margin: 0 0 2px;
+  color: var(--color-primario);
   font-size: 1rem;
   font-weight: 700;
-  margin: 0 0 2px;
   line-height: 1.2;
 }
 
 .lv-book-author {
+  margin: 0 0 8px;
   color: var(--color-texto-suave);
   font-size: 0.85rem;
-  margin: 0 0 8px;
-}
-
-.lv-price {
-  color: var(--color-acento);
-  font-weight: 700;
-  font-size: 1.1rem;
-  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 .lv-stars {
@@ -192,136 +720,230 @@ nav.lv-navbar .uk-navbar-dropdown {
   font-size: 0.9rem;
 }
 
-/* ---------- Hero / slideshow ---------- */
-.lv-slideshow {
-  border-radius: var(--radio);
-  overflow: hidden;
-  box-shadow: var(--sombra-suave);
-}
-
-.lv-slideshow .uk-slideshow-items {
-  min-height: 320px !important;
-}
-
-.lv-hero-slide {
-  background: linear-gradient(135deg, #2c3e50 0%, #3d5a73 55%, #4a6278 100%);
-  color: #fff;
-  padding: 48px 40px;
-  min-height: 320px;
-  display: flex;
-  align-items: center;
-}
-
-.lv-hero-slide h1 {
-  color: #fff;
-  font-size: clamp(1.8rem, 4vw, 2.6rem);
-  line-height: 1.15;
-  margin: 0 0 16px;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  font-weight: 700;
-}
-
-.lv-hero-slide p {
-  color: #dce4ec;
-  font-size: 1.1rem;
-  margin: 0 0 28px;
-  max-width: 520px;
-}
-
-.lv-hero-icon {
-  color: var(--color-dorado);
-  opacity: 0.9;
-  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2));
-}
-
-.lv-slideshow .uk-dotnav > * > * {
-  background-color: rgba(44, 62, 80, 0.25);
-  border: none;
-  width: 10px;
-  height: 10px;
-}
-
-.lv-slideshow .uk-dotnav > .uk-active > * {
-  background-color: var(--color-acento);
-  transform: scale(1.15);
-}
-
-.lv-btn-cta {
-  background-color: var(--color-cta);
-  color: #fff !important;
-  border: none;
-  border-radius: 6px;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  font-size: 0.85rem;
-  padding: 12px 28px;
-  transition: background-color 0.2s ease, transform 0.15s ease;
-}
-
-.lv-btn-cta:hover {
-  background-color: var(--color-cta-hover);
-  color: #fff !important;
-  transform: translateY(-1px);
-}
-
-/* ---------- Categorías ---------- */
-.lv-cat-tile {
-  background-color: var(--color-tarjeta);
-  border: 1px solid #e2ddd2;
-  border-radius: var(--radio);
-  padding: 28px 12px;
-  text-align: center;
-  transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
-  display: block;
-  color: var(--color-primario);
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  font-weight: 600;
-  font-size: 0.9rem;
-  box-shadow: var(--sombra-suave);
-}
-
-.lv-cat-tile:hover {
-  background-color: var(--color-primario);
-  color: #fff;
-  text-decoration: none;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(44, 62, 80, 0.18);
-}
-
-.lv-cat-tile span[uk-icon] {
-  display: block;
-  margin-bottom: 10px;
+.lv-price {
   color: var(--color-acento);
-}
-
-.lv-cat-tile:hover span[uk-icon] {
-  color: var(--color-dorado);
-}
-
-/* ---------- Títulos de sección ---------- */
-.lv-section-title {
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 700;
+}
+
+/* ===========================================================
+   Páginas internas
+   =========================================================== */
+
+.lv-page {
+  padding: 32px 0 60px;
+}
+
+.lv-section-title {
   color: var(--color-primario);
+  font-size: 1.65rem;
   border-left: 5px solid var(--color-acento);
   padding-left: 14px;
   margin-bottom: 24px;
 }
 
-main.uk-container {
-  padding-bottom: 20px;
+/* Migas de pan */
+.lv-breadcrumb {
+  background-color: #ece8df;
+  padding: 8px 0;
+  font-family: var(--fuente-titulos);
+  font-size: 0.85rem;
 }
 
-/* ---------- Pie de página ---------- */
+.lv-breadcrumb .breadcrumb {
+  margin: 0;
+}
+
+.lv-breadcrumb .breadcrumb-item,
+.lv-breadcrumb .breadcrumb-item a {
+  color: var(--color-primario);
+}
+
+.lv-breadcrumb .breadcrumb-item.active {
+  color: var(--color-texto-suave);
+}
+
+/* Cajas y formularios */
+.lv-sidebar,
+.lv-summary,
+.lv-form-card,
+.lv-table-card {
+  padding: 20px;
+}
+
+.lv-form-card,
+.lv-table-card {
+  padding: 22px;
+}
+
+.lv-sidebar h3,
+.lv-sidebar .h4,
+.lv-form-card h3,
+.lv-summary h3 {
+  margin-top: 0;
+  border-bottom: 2px solid var(--color-acento);
+  padding-bottom: 8px;
+  color: var(--color-primario);
+  font-family: var(--fuente-titulos);
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.lv-form-card h3,
+.lv-summary h3 {
+  margin-bottom: 18px;
+}
+
+.lv-filter-title,
+.form-label {
+  color: var(--color-primario);
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+}
+
+.lv-filter-title {
+  font-size: 0.95rem;
+  font-weight: 800;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+.lv-form-help {
+  color: var(--color-texto-suave);
+  font-family: var(--fuente-titulos);
+  font-size: 0.78rem;
+}
+
+.form-control,
+.form-select {
+  border-color: #d8d0c3;
+  font-family: var(--fuente-titulos);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--color-acento);
+  box-shadow: 0 0 0 0.2rem rgba(192, 57, 43, 0.15);
+}
+
+/* Etiquetas y estados */
+.lv-label-pill,
+.lv-stock {
+  border-radius: 999px;
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+}
+
+.lv-label-pill {
+  background-color: var(--color-primario);
+  color: #fff;
+  font-size: 0.72rem;
+  padding: 5px 10px;
+}
+
+.lv-stock {
+  background-color: #dcefe4;
+  color: #2c6b45;
+  font-size: 0.8rem;
+  padding: 6px 12px;
+}
+
+.lv-product-thumb {
+  width: 52px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 6px;
+  background-color: #d9d3c7;
+}
+
+.lv-summary-total {
+  color: var(--color-acento);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.lv-checkout-summary {
+  position: sticky;
+  top: 20px;
+}
+
+/* Bootstrap personalizado */
+.table {
+  font-family: var(--fuente-titulos);
+}
+
+.lv-pagination .page-link {
+  color: var(--color-primario);
+  font-family: var(--fuente-titulos);
+}
+
+.lv-pagination .page-item.active .page-link {
+  background-color: var(--color-acento);
+  border-color: var(--color-acento);
+}
+
+.lv-pagination .page-link:hover {
+  color: #fff;
+  background-color: var(--color-primario);
+  border-color: var(--color-primario);
+}
+
+.lv-tabs .nav-link {
+  color: var(--color-primario);
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+}
+
+.lv-tabs .nav-link.active {
+  color: var(--color-acento);
+}
+
+.accordion-button {
+  color: var(--color-primario);
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #ece8df;
+  color: var(--color-primario);
+}
+
+/* ===========================================================
+   Banner final y pie de página
+   =========================================================== */
+
+.lv-home-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  padding: 42px;
+  border-radius: 22px;
+  color: #fff;
+  background:
+    radial-gradient(circle at right top, rgba(224, 201, 166, 0.22), transparent 38%),
+    linear-gradient(135deg, var(--color-primario-oscuro), var(--color-primario));
+  box-shadow: var(--sombra-suave);
+}
+
+.lv-home-banner h2 {
+  margin: 0 0 12px;
+  color: #fff;
+  font-size: clamp(1.6rem, 4vw, 2.5rem);
+}
+
+.lv-home-banner p {
+  max-width: 650px;
+  margin: 0;
+  color: #dce4ec;
+}
+
 .lv-footer {
   background-color: var(--color-primario);
   color: #cdd4da;
   padding: 40px 0 20px;
-  margin-top: 50px;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--fuente-titulos);
   font-size: 0.9rem;
 }
 
@@ -335,33 +957,136 @@ main.uk-container {
 
 .lv-footer a:hover {
   color: #fff;
-  text-decoration: none;
 }
 
 .lv-footer-bottom {
-  border-top: 1px solid #46586b;
   margin-top: 24px;
   padding-top: 16px;
-  text-align: center;
-  font-size: 0.8rem;
+  border-top: 1px solid #46586b;
   color: #95a5a6;
+  font-size: 0.8rem;
+  text-align: center;
 }
 
-/* ---------- Resumen de compra ---------- */
-.lv-summary {
-  background-color: var(--color-tarjeta);
-  border: 1px solid #e2ddd2;
-  border-radius: var(--radio);
-  padding: 20px;
+/* ===========================================================
+   Responsive
+   =========================================================== */
+
+@media (max-width: 991px) {
+  .lv-navbar .container {
+    justify-content: space-between;
+  }
+
+  .lv-navbar .navbar-nav {
+    width: 100%;
+    align-items: center;
+    padding: 14px 0;
+  }
+
+  .lv-navbar .nav-link {
+    width: 100%;
+    text-align: center;
+    padding: 12px 16px;
+  }
+
+  .lv-navbar .dropdown-menu {
+    text-align: center;
+  }
+
+  .lv-home-hero {
+    background: linear-gradient(135deg, #2c3e50 0%, #344f67 100%);
+    padding: 60px 0;
+  }
+
+  .lv-book-visual {
+    min-height: 360px;
+    margin-top: 30px;
+  }
+
+  .lv-big-book {
+    width: 215px;
+    height: 290px;
+  }
+
+  .lv-big-book-pages {
+    height: 255px;
+  }
+
+  .lv-floating-note {
+    display: none;
+  }
+
+  .lv-home-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
-.lv-summary-total {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: var(--color-acento);
-}
+@media (max-width: 767px) {
+  .lv-topbar {
+    text-align: center;
+  }
 
-/* ---------- Utilidades ---------- */
-.lv-mono {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  .lv-logo {
+    justify-content: center;
+  }
+
+  .lv-search {
+    padding-left: 12px;
+  }
+
+  .lv-home-hero h1 {
+    font-size: 2.35rem;
+  }
+
+  .lv-home-description {
+    font-size: 1rem;
+  }
+
+  .lv-home-actions {
+    flex-direction: column;
+  }
+
+  .lv-home-actions .btn,
+  .lv-home-benefits div {
+    width: 100%;
+  }
+
+  .lv-book-visual {
+    min-height: 310px;
+  }
+
+  .lv-big-book {
+    width: 185px;
+    height: 250px;
+  }
+
+  .lv-big-book-pages {
+    height: 218px;
+  }
+
+  .lv-cover-title {
+    font-size: 1.55rem;
+  }
+
+  .lv-home-banner {
+    padding: 28px;
+  }
+
+  .lv-book-cover {
+    height: 220px;
+  }
+
+  .lv-page {
+    padding-top: 24px;
+  }
+
+  .lv-section-title {
+    font-size: 1.35rem;
+  }
+
+  .lv-form-card,
+  .lv-table-card {
+    padding: 18px;
+  }
 }

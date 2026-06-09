@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Librería Letras Vivas | Búsqueda</title>
+  <title>Librería Letras Vivas | Novedades</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
@@ -30,7 +30,7 @@
 
         <div class="col-12 col-md-6">
           <form class="lv-search d-flex" action="busqueda.html" method="get">
-            <input class="form-control" type="search" name="q" value="fantasía" placeholder="Buscar libro, autor, categoría..." aria-label="Buscar">
+            <input class="form-control" type="search" name="q" placeholder="Buscar libro, autor, categoría..." aria-label="Buscar">
             <button class="btn lv-search-btn" type="submit">Buscar</button>
           </form>
         </div>
@@ -70,7 +70,7 @@
           </li>
 
           <li class="nav-item"><a class="nav-link" href="autores.html">Autores</a></li>
-          <li class="nav-item"><a class="nav-link" href="novedades.html">Novedades</a></li>
+          <li class="nav-item"><a class="nav-link active" href="novedades.html">Novedades</a></li>
           <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
         </ul>
       </div>
@@ -83,7 +83,7 @@
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb py-2">
         <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Búsqueda</li>
+        <li class="breadcrumb-item active" aria-current="page">Novedades</li>
       </ol>
     </nav>
   </div>
@@ -92,41 +92,39 @@
 <main class="lv-page">
   <div class="container">
 
-    <form class="lv-form-card mb-4" action="busqueda.html" method="get">
-      <div class="row g-3 align-items-end">
-        <div class="col-12 col-lg-10">
-          <label class="form-label" for="buscar">Ingrese palabras clave</label>
-          <input class="form-control form-control-lg" id="buscar" type="search" name="q" value="fantasía" placeholder="Ej.: título, autor o categoría">
-        </div>
-
-        <div class="col-12 col-lg-2">
-          <button class="btn lv-btn-cta w-100" type="submit">Buscar</button>
-        </div>
-      </div>
-    </form>
-
     <div class="mb-4">
-      <h1 class="lv-section-title mb-1">Resultados para: «fantasía»</h1>
-      <p class="lv-page-lead mb-0">Se encontraron 4 resultados relacionados con tu búsqueda.</p>
+      <h1 class="lv-section-title mb-1">Novedades de la semana</h1>
+      <p class="lv-page-lead mb-0">
+        Nuevos títulos y recomendaciones recientes para actualizar tu lista de lectura.
+      </p>
     </div>
 
-    <div class="row g-4">
+    <section class="lv-form-card mb-5">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-lg-4">
+          <img class="img-fluid rounded" src="https://covers.openlibrary.org/b/id/8567176-L.jpg" alt="Portada de El Nombre del Viento">
+        </div>
 
-      <div class="col-12 col-sm-6 col-lg-3">
-        <div class="lv-book-card">
-          <img class="lv-book-cover" src="https://covers.openlibrary.org/b/id/8567176-L.jpg" alt="El Nombre del Viento">
-          <div class="lv-book-body">
-            <p class="lv-book-title">El Nombre del Viento</p>
-            <p class="lv-book-author">Patrick Rothfuss</p>
-            <span class="lv-label-pill">Fantasía</span>
+        <div class="col-12 col-lg-8">
+          <p class="lv-home-label" style="color: var(--color-acento);">Recomendación principal</p>
+          <h2>El Nombre del Viento</h2>
+          <p class="lv-page-lead">Patrick Rothfuss</p>
 
-            <div class="d-flex justify-content-between align-items-center mt-3">
-              <span class="lv-price">₡8.500</span>
-              <a href="detalle.html" class="btn btn-sm lv-btn-detail">Detalle</a>
-            </div>
-          </div>
+          <p>
+            Una novela de fantasía envolvente, ideal para quienes buscan una historia extensa,
+            con misterio, aventura y un protagonista memorable.
+          </p>
+
+          <p class="lv-price">₡8.500</p>
+
+          <a href="detalle.html" class="btn lv-btn-cta">Ver detalle</a>
         </div>
       </div>
+    </section>
+
+    <h2 class="lv-section-title">Últimos libros agregados</h2>
+
+    <div class="row g-4">
 
       <div class="col-12 col-sm-6 col-lg-3">
         <div class="lv-book-card">
@@ -134,7 +132,7 @@
           <div class="lv-book-body">
             <p class="lv-book-title">El Hobbit</p>
             <p class="lv-book-author">J. R. R. Tolkien</p>
-            <span class="lv-label-pill">Fantasía</span>
+            <span class="lv-label-pill">Nuevo</span>
 
             <div class="d-flex justify-content-between align-items-center mt-3">
               <span class="lv-price">₡10.500</span>
@@ -150,7 +148,7 @@
           <div class="lv-book-body">
             <p class="lv-book-title">Juego de Tronos</p>
             <p class="lv-book-author">George R. R. Martin</p>
-            <span class="lv-label-pill">Fantasía</span>
+            <span class="lv-label-pill">Nuevo</span>
 
             <div class="d-flex justify-content-between align-items-center mt-3">
               <span class="lv-price">₡11.900</span>
@@ -166,7 +164,7 @@
           <div class="lv-book-body">
             <p class="lv-book-title">Harry Potter y la piedra filosofal</p>
             <p class="lv-book-author">J. K. Rowling</p>
-            <span class="lv-label-pill">Fantasía</span>
+            <span class="lv-label-pill">Nuevo</span>
 
             <div class="d-flex justify-content-between align-items-center mt-3">
               <span class="lv-price">₡9.300</span>
@@ -176,16 +174,23 @@
         </div>
       </div>
 
-    </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="lv-book-card">
+          <img class="lv-book-cover" src="https://covers.openlibrary.org/b/id/8259447-L.jpg" alt="Fahrenheit 451">
+          <div class="lv-book-body">
+            <p class="lv-book-title">Fahrenheit 451</p>
+            <p class="lv-book-author">Ray Bradbury</p>
+            <span class="lv-label-pill">Nuevo</span>
 
-    <nav class="mt-5" aria-label="Paginación de búsqueda">
-      <ul class="pagination justify-content-center lv-pagination">
-        <li class="page-item disabled"><span class="page-link">Anterior</span></li>
-        <li class="page-item active"><span class="page-link">1</span></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
-      </ul>
-    </nav>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="lv-price">₡7.500</span>
+              <a href="detalle.html" class="btn btn-sm lv-btn-detail">Detalle</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
 
   </div>
 </main>

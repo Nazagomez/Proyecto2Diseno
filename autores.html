@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Librería Letras Vivas | Autores</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+<header>
+  <div class="lv-topbar">
+    <div class="container">
+      <div class="row align-items-center g-3">
+
+        <div class="col-12 col-md-3">
+          <a href="index.html" class="lv-logo">
+            <div class="lv-logo-libro"><span></span></div>
+            <div>
+              Librería<br>
+              Letras Vivas
+              <span>Tu librería en línea</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <form class="lv-search d-flex" action="busqueda.html" method="get">
+            <input class="form-control" type="search" name="q" placeholder="Buscar libro, autor, categoría..." aria-label="Buscar">
+            <button class="btn lv-search-btn" type="submit">Buscar</button>
+          </form>
+        </div>
+
+        <div class="col-12 col-md-3 text-md-end">
+          <a href="carrito.html" class="lv-cart-link">
+            Carrito <span class="badge lv-cart-badge">3</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg lv-navbar">
+    <div class="container">
+      <a class="navbar-brand d-lg-none" href="index.html">Letras Vivas</a>
+
+      <button class="navbar-toggler lv-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="catalogo.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorías</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="catalogo.html">Novela</a></li>
+              <li><a class="dropdown-item" href="catalogo.html">Fantasía</a></li>
+              <li><a class="dropdown-item" href="catalogo.html">Ciencia Ficción</a></li>
+              <li><a class="dropdown-item" href="catalogo.html">Misterio</a></li>
+              <li><a class="dropdown-item" href="catalogo.html">Romance</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link active" href="autores.html">Autores</a></li>
+          <li class="nav-item"><a class="nav-link" href="novedades.html">Novedades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="lv-breadcrumb">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb py-2">
+        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Autores</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<main class="lv-page">
+  <div class="container">
+
+    <div class="mb-5">
+      <h1 class="lv-section-title mb-1">Autores destacados</h1>
+      <p class="lv-page-lead mb-0">
+        Conoce algunos de los escritores más buscados por nuestros lectores.
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="lv-form-card h-100 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <div>
+              <span class="lv-label-pill">Novela</span>
+              <h3 class="mt-3 mb-1">Gabriel García Márquez</h3>
+              <p class="lv-form-help mb-0">Literatura latinoamericana</p>
+            </div>
+            <span class="badge lv-cart-badge">2 obras</span>
+          </div>
+
+          <p>
+            Escritor colombiano reconocido por su estilo narrativo y por obras fundamentales
+            de la literatura latinoamericana.
+          </p>
+
+          <div class="bg-light rounded p-3 mb-3">
+            <strong class="lv-mono d-block mb-2">Obras disponibles</strong>
+            <ul class="mb-0 ps-3">
+              <li>Cien años de soledad</li>
+              <li>Crónica de una muerte anunciada</li>
+            </ul>
+          </div>
+
+          <p class="lv-form-help">
+            Ideal para lectores que disfrutan historias familiares, memoria, tradición y realismo mágico.
+          </p>
+
+          <div class="mt-auto">
+            <a href="catalogo.html" class="btn lv-btn-detail w-100">Ver libros</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="lv-form-card h-100 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <div>
+              <span class="lv-label-pill">Fantasía</span>
+              <h3 class="mt-3 mb-1">Patrick Rothfuss</h3>
+              <p class="lv-form-help mb-0">Fantasía contemporánea</p>
+            </div>
+            <span class="badge lv-cart-badge">1 obra</span>
+          </div>
+
+          <p>
+            Autor de fantasía contemporánea conocido por la serie Crónica del asesino de reyes
+            y por su forma detallada de construir personajes.
+          </p>
+
+          <div class="bg-light rounded p-3 mb-3">
+            <strong class="lv-mono d-block mb-2">Obras disponibles</strong>
+            <ul class="mb-0 ps-3">
+              <li>El Nombre del Viento</li>
+            </ul>
+          </div>
+
+          <p class="lv-form-help">
+            Recomendado para quienes buscan aventura, misterio, magia y una narración envolvente.
+          </p>
+
+          <div class="mt-auto">
+            <a href="catalogo.html" class="btn lv-btn-detail w-100">Ver libros</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="lv-form-card h-100 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <div>
+              <span class="lv-label-pill">Distopía</span>
+              <h3 class="mt-3 mb-1">George Orwell</h3>
+              <p class="lv-form-help mb-0">Crítica social y política</p>
+            </div>
+            <span class="badge lv-cart-badge">1 obra</span>
+          </div>
+
+          <p>
+            Escritor británico recordado por sus novelas de crítica social, política y distopía,
+            con temas sobre poder y control.
+          </p>
+
+          <div class="bg-light rounded p-3 mb-3">
+            <strong class="lv-mono d-block mb-2">Obras disponibles</strong>
+            <ul class="mb-0 ps-3">
+              <li>1984</li>
+            </ul>
+          </div>
+
+          <p class="lv-form-help">
+            Perfecto para lectores interesados en historias reflexivas, sociales y de ciencia ficción crítica.
+          </p>
+
+          <div class="mt-auto">
+            <a href="catalogo.html" class="btn lv-btn-detail w-100">Ver libros</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="lv-form-card h-100 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <div>
+              <span class="lv-label-pill">Experimental</span>
+              <h3 class="mt-3 mb-1">Julio Cortázar</h3>
+              <p class="lv-form-help mb-0">Narrativa argentina</p>
+            </div>
+            <span class="badge lv-cart-badge">1 obra</span>
+          </div>
+
+          <p>
+            Escritor argentino reconocido por su estilo experimental y por renovar la forma
+            tradicional de narrar una historia.
+          </p>
+
+          <div class="bg-light rounded p-3 mb-3">
+            <strong class="lv-mono d-block mb-2">Obras disponibles</strong>
+            <ul class="mb-0 ps-3">
+              <li>Rayuela</li>
+            </ul>
+          </div>
+
+          <p class="lv-form-help">
+            Buena opción para lectores que buscan estructuras narrativas diferentes y lectura desafiante.
+          </p>
+
+          <div class="mt-auto">
+            <a href="catalogo.html" class="btn lv-btn-detail w-100">Ver libros</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="lv-form-card h-100 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <div>
+              <span class="lv-label-pill">Épica</span>
+              <h3 class="mt-3 mb-1">J. R. R. Tolkien</h3>
+              <p class="lv-form-help mb-0">Fantasía clásica</p>
+            </div>
+            <span class="badge lv-cart-badge">1 obra</span>
+          </div>
+
+          <p>
+            Autor británico considerado una figura central dentro de la literatura fantástica
+            y la creación de mundos imaginarios.
+          </p>
+
+          <div class="bg-light rounded p-3 mb-3">
+            <strong class="lv-mono d-block mb-2">Obras disponibles</strong>
+            <ul class="mb-0 ps-3">
+              <li>El Hobbit</li>
+            </ul>
+          </div>
+
+          <p class="lv-form-help">
+            Ideal para quienes disfrutan viajes, criaturas fantásticas y aventuras de largo recorrido.
+          </p>
+
+          <div class="mt-auto">
+            <a href="catalogo.html" class="btn lv-btn-detail w-100">Ver libros</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="lv-form-card h-100 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <div>
+              <span class="lv-label-pill">Romance</span>
+              <h3 class="mt-3 mb-1">Jane Austen</h3>
+              <p class="lv-form-help mb-0">Clásicos y sociedad</p>
+            </div>
+            <span class="badge lv-cart-badge">1 obra</span>
+          </div>
+
+          <p>
+            Escritora inglesa conocida por sus novelas sobre sociedad, relaciones personales
+            y crítica social.
+          </p>
+
+          <div class="bg-light rounded p-3 mb-3">
+            <strong class="lv-mono d-block mb-2">Obras disponibles</strong>
+            <ul class="mb-0 ps-3">
+              <li>Orgullo y prejuicio</li>
+            </ul>
+          </div>
+
+          <p class="lv-form-help">
+            Recomendada para lectores que disfrutan historias románticas, elegantes y con crítica social.
+          </p>
+
+          <div class="mt-auto">
+            <a href="catalogo.html" class="btn lv-btn-detail w-100">Ver libros</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</main>
+
+<footer class="lv-footer" id="contacto">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-12 col-md-4">
+        <h4>Librería Letras Vivas</h4>
+        <p>Promoviendo la lectura desde 2010. Más de 25.000 títulos nacionales e internacionales con envío a todo Costa Rica.</p>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <h4>Contacto</h4>
+        <ul class="list-unstyled">
+          <li>Av. Central, San José, Costa Rica</li>
+          <li>+506 2222-3344</li>
+          <li>info@letrasvivas.cr</li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <h4>Enlaces</h4>
+        <ul class="list-unstyled">
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="busqueda.html">Búsqueda</a></li>
+          <li><a href="carrito.html">Carrito de compras</a></li>
+          <li><a href="index.html">Política de privacidad</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="lv-footer-bottom">
+      © 2026 Librería Letras Vivas. Todos los derechos reservados. |
+      Diseñado por el equipo de desarrollo Letras Vivas.
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

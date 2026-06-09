@@ -3,252 +3,331 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Librería Letras Vivas | Inicio</title>
-  <!-- UIKit CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.6/dist/css/uikit.min.css" />
-  <!-- Estilos propios -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
-  <!-- UIKit JS -->
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.6/dist/js/uikit.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.6/dist/js/uikit-icons.min.js"></script>
 </head>
+
 <body>
 
-  <!-- ====================== CABECERA ====================== -->
-  <header>
-    <!-- Barra superior: logo + búsqueda + carrito -->
-    <div class="lv-topbar">
-      <div class="uk-container">
-        <div class="uk-grid-small uk-flex-middle" uk-grid>
-          <div class="uk-width-auto">
-            <a href="index.html" class="lv-logo">
-              <span uk-icon="icon: bookmark; ratio: 1.5" class="lv-logo-icon"></span>
-              <span class="uk-visible@s">Librería<br />Letras Vivas<span>Tu librería en línea</span></span>
-            </a>
+<header>
+  <div class="lv-topbar">
+    <div class="container">
+      <div class="row align-items-center g-3">
+
+        <div class="col-12 col-md-3">
+          <a href="index.html" class="lv-logo">
+            <div class="lv-logo-libro"><span></span></div>
+            <div>
+              Librería<br>
+              Letras Vivas
+              <span>Tu librería en línea</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <form class="lv-search d-flex" action="busqueda.html" method="get">
+            <input class="form-control" type="search" name="q" placeholder="Buscar libro, autor, categoría..." aria-label="Buscar">
+            <button class="btn lv-search-btn" type="submit">Buscar</button>
+          </form>
+        </div>
+
+        <div class="col-12 col-md-3 text-md-end">
+          <a href="carrito.html" class="lv-cart-link">
+            Carrito <span class="badge lv-cart-badge">3</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg lv-navbar">
+    <div class="container">
+      <a class="navbar-brand d-lg-none" href="index.html">Letras Vivas</a>
+
+      <button class="navbar-toggler lv-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="catalogo.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorías</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="catalogo.html">Novela</a></li>
+              <li><a class="dropdown-item" href="catalogo.html">Fantasía</a></li>
+              <li><a class="dropdown-item" href="catalogo.html">Ciencia Ficción</a></li>
+              <li><a class="dropdown-item" href="catalogo.html">Misterio</a></li>
+              <li><a class="dropdown-item" href="catalogo.html">Romance</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="autores.html">Autores</a></li>
+          <li class="nav-item"><a class="nav-link" href="novedades.html">Novedades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="lv-home-hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+
+        <div class="col-12 col-lg-7">
+          <p class="lv-home-label">Lecturas para todos los gustos</p>
+          <h1>Encuentra tu próxima historia favorita</h1>
+
+          <p class="lv-home-description">
+            Explora una selección de libros pensada para lectores curiosos:
+            novelas, fantasía, ciencia ficción, misterio, romance y mucho más.
+          </p>
+
+          <div class="lv-home-actions">
+            <a href="catalogo.html" class="btn lv-btn-cta">Ver catálogo</a>
+            <a href="#destacados" class="btn lv-btn-outline">Ver destacados</a>
           </div>
-          <div class="uk-width-expand">
-            <form class="lv-search uk-flex" action="busqueda.html" method="get">
-              <input class="uk-input uk-form-blank" type="search" name="q"
-                     placeholder="Buscar libro, autor, categoría..." aria-label="Buscar" />
-              <button class="uk-button uk-button-text uk-margin-small-right" type="submit"
-                      uk-icon="icon: search"></button>
-            </form>
+
+          <div class="lv-home-benefits">
+            <div>
+              <strong>25k+</strong>
+              <span>Títulos disponibles</span>
+            </div>
+            <div>
+              <strong>5</strong>
+              <span>Categorías principales</span>
+            </div>
+            <div>
+              <strong>CR</strong>
+              <span>Envíos nacionales</span>
+            </div>
           </div>
-          <div class="uk-width-auto">
-            <a href="carrito.html" class="lv-cart-link">
-              <span uk-icon="icon: cart"></span> Carrito
-              <span class="uk-badge">3</span>
-            </a>
+        </div>
+
+        <div class="col-12 col-lg-5">
+          <div class="lv-book-visual">
+
+            <div class="lv-floating-note lv-note-one">Novedades</div>
+            <div class="lv-floating-note lv-note-two">Más leídos</div>
+
+            <div class="lv-big-book">
+              <div class="lv-big-book-cover">
+                <div class="lv-cover-lines">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <div class="lv-cover-title">
+                  Letras<br>
+                  Vivas
+                </div>
+              </div>
+
+              <div class="lv-big-book-pages"></div>
+            </div>
+
+            <div class="lv-book-base"></div>
           </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="lv-home-section">
+    <div class="container">
+      <div class="lv-home-section-header">
+        <p class="lv-home-label">Explora por género</p>
+        <h2>Categorías principales</h2>
+        <p>Elige una categoría y encuentra libros según el tipo de historia que quieres leer hoy.</p>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg">
+          <a href="catalogo.html" class="lv-cat-tile">
+            <div class="lv-mini-book lv-mini-novela"></div>
+            <strong>Novela</strong>
+            <span>Historias profundas y memorables</span>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg">
+          <a href="catalogo.html" class="lv-cat-tile">
+            <div class="lv-mini-book lv-mini-fantasia"></div>
+            <strong>Fantasía</strong>
+            <span>Mundos mágicos y aventuras</span>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg">
+          <a href="catalogo.html" class="lv-cat-tile">
+            <div class="lv-mini-book lv-mini-ciencia"></div>
+            <strong>Ciencia Ficción</strong>
+            <span>Futuros, tecnología y universo</span>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-6 col-lg">
+          <a href="catalogo.html" class="lv-cat-tile">
+            <div class="lv-mini-book lv-mini-misterio"></div>
+            <strong>Misterio</strong>
+            <span>Secretos, pistas y suspenso</span>
+          </a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg">
+          <a href="catalogo.html" class="lv-cat-tile">
+            <div class="lv-mini-book lv-mini-romance"></div>
+            <strong>Romance</strong>
+            <span>Historias emotivas y cercanas</span>
+          </a>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- Navegación global -->
-    <nav class="lv-navbar uk-navbar-container" uk-navbar>
-      <div class="uk-container">
-        <div class="uk-navbar-left">
-          <ul class="uk-navbar-nav">
-            <li class="uk-active"><a href="index.html">Inicio</a></li>
-            <li><a href="catalogo.html">Catálogo</a></li>
-            <li>
-              <a href="catalogo.html">Categorías <span uk-icon="icon: triangle-down"></span></a>
-              <div class="uk-navbar-dropdown">
-                <ul class="uk-nav uk-navbar-dropdown-nav">
-                  <li><a href="catalogo.html">Novela</a></li>
-                  <li><a href="catalogo.html">Fantasía</a></li>
-                  <li><a href="catalogo.html">Ciencia Ficción</a></li>
-                  <li><a href="catalogo.html">Misterio</a></li>
-                  <li><a href="catalogo.html">Romance</a></li>
-                </ul>
-              </div>
-            </li>
-            <li><a href="catalogo.html">Autores</a></li>
-            <li><a href="catalogo.html">Novedades</a></li>
-            <li><a href="index.html">Contacto</a></li>
-          </ul>
-        </div>
+  <section class="lv-home-section lv-home-section-soft" id="destacados">
+    <div class="container">
+
+      <div class="lv-home-section-header">
+        <p class="lv-home-label">Selección recomendada</p>
+        <h2>Libros destacados</h2>
+        <p>Algunos títulos populares para comenzar tu próxima lectura.</p>
       </div>
-    </nav>
-  </header>
 
-  <!-- ====================== CONTENIDO ====================== -->
-  <main class="uk-container uk-margin-top">
+      <div class="row g-4">
 
-    <!-- Hero / carrusel -->
-    <div class="lv-slideshow" uk-slideshow="animation: push; autoplay: true; autoplay-interval: 5000; min-height: 320">
-      <ul class="uk-slideshow-items">
-        <li>
-          <div class="lv-hero-slide">
-            <div class="uk-grid-large uk-flex-middle uk-width-1-1" uk-grid>
-              <div class="uk-width-2-3@m">
-                <h1>Encuentra tu próxima historia</h1>
-                <p>Miles de libros para todos los gustos. Descubre novedades, clásicos y autores nacionales con envío a todo el país.</p>
-                <a href="catalogo.html" class="uk-button lv-btn-cta uk-button-large">Ver catálogo</a>
-              </div>
-              <div class="uk-width-1-3@m uk-text-center uk-visible@m">
-                <span class="lv-hero-icon" uk-icon="icon: album; ratio: 6"></span>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="lv-hero-slide">
-            <div class="uk-grid-large uk-flex-middle uk-width-1-1" uk-grid>
-              <div class="uk-width-2-3@m">
-                <h1>Novedades de la semana</h1>
-                <p>Los lanzamientos más esperados ya están disponibles. Reserva el tuyo antes de que se agote.</p>
-                <a href="catalogo.html" class="uk-button lv-btn-cta uk-button-large">Ver novedades</a>
-              </div>
-              <div class="uk-width-1-3@m uk-text-center uk-visible@m">
-                <span class="lv-hero-icon" uk-icon="icon: star; ratio: 6"></span>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
-      <div class="uk-flex uk-flex-center uk-margin-small-top">
-        <ul class="uk-slideshow-nav uk-dotnav"></ul>
-      </div>
-    </div>
-
-    <!-- Categorías principales -->
-    <section class="uk-margin-large-top">
-      <h2 class="lv-section-title">Categorías principales</h2>
-      <div class="uk-child-width-1-2 uk-child-width-1-5@m uk-grid-small" uk-grid>
-        <div>
-          <a href="catalogo.html" class="lv-cat-tile">
-            <span uk-icon="icon: file-text; ratio: 1.6"></span>
-            Novela
-          </a>
-        </div>
-        <div>
-          <a href="catalogo.html" class="lv-cat-tile">
-            <span uk-icon="icon: bolt; ratio: 1.6"></span>
-            Fantasía
-          </a>
-        </div>
-        <div>
-          <a href="catalogo.html" class="lv-cat-tile">
-            <span uk-icon="icon: world; ratio: 1.6"></span>
-            Ciencia Ficción
-          </a>
-        </div>
-        <div>
-          <a href="catalogo.html" class="lv-cat-tile">
-            <span uk-icon="icon: search; ratio: 1.6"></span>
-            Misterio
-          </a>
-        </div>
-        <div>
-          <a href="catalogo.html" class="lv-cat-tile">
-            <span uk-icon="icon: heart; ratio: 1.6"></span>
-            Romance
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Libros destacados -->
-    <section class="uk-margin-large-top">
-      <h2 class="lv-section-title">Libros destacados</h2>
-      <div class="uk-child-width-1-2 uk-child-width-1-4@m uk-grid-small" uk-grid>
-
-        <div>
+        <div class="col-12 col-sm-6 col-lg-3">
           <div class="lv-book-card">
-            <img class="lv-book-cover" src="https://covers.openlibrary.org/b/id/8231856-L.jpg" alt="Portada de Cien años de soledad" />
+            <img class="lv-book-cover" src="https://covers.openlibrary.org/b/id/8231856-L.jpg" alt="Portada de Cien años de soledad">
             <div class="lv-book-body">
               <p class="lv-book-title">Cien años de soledad</p>
               <p class="lv-book-author">Gabriel García Márquez</p>
               <div class="lv-stars">★★★★★</div>
-              <div class="uk-flex uk-flex-between uk-flex-middle uk-margin-small-top">
+
+              <div class="d-flex justify-content-between align-items-center mt-2">
                 <span class="lv-price">₡9.800</span>
-                <a href="detalle.html" class="uk-button uk-button-default uk-button-small">Detalle</a>
+                <a href="detalle.html" class="btn btn-sm lv-btn-detail">Detalle</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div>
+        <div class="col-12 col-sm-6 col-lg-3">
           <div class="lv-book-card">
-            <img class="lv-book-cover" src="https://covers.openlibrary.org/b/id/8567176-L.jpg" alt="Portada de El nombre del viento" />
+            <img class="lv-book-cover" src="https://covers.openlibrary.org/b/id/8567176-L.jpg" alt="Portada de El Nombre del Viento">
             <div class="lv-book-body">
               <p class="lv-book-title">El Nombre del Viento</p>
               <p class="lv-book-author">Patrick Rothfuss</p>
               <div class="lv-stars">★★★★★</div>
-              <div class="uk-flex uk-flex-between uk-flex-middle uk-margin-small-top">
+
+              <div class="d-flex justify-content-between align-items-center mt-2">
                 <span class="lv-price">₡8.500</span>
-                <a href="detalle.html" class="uk-button uk-button-default uk-button-small">Detalle</a>
+                <a href="detalle.html" class="btn btn-sm lv-btn-detail">Detalle</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div>
+        <div class="col-12 col-sm-6 col-lg-3">
           <div class="lv-book-card">
-            <img class="lv-book-cover" src="https://covers.openlibrary.org/b/id/8225261-L.jpg" alt="Portada de 1984" />
+            <img class="lv-book-cover" src="https://covers.openlibrary.org/b/id/8225261-L.jpg" alt="Portada de 1984">
             <div class="lv-book-body">
               <p class="lv-book-title">1984</p>
               <p class="lv-book-author">George Orwell</p>
               <div class="lv-stars">★★★★☆</div>
-              <div class="uk-flex uk-flex-between uk-flex-middle uk-margin-small-top">
+
+              <div class="d-flex justify-content-between align-items-center mt-2">
                 <span class="lv-price">₡7.200</span>
-                <a href="detalle.html" class="uk-button uk-button-default uk-button-small">Detalle</a>
+                <a href="detalle.html" class="btn btn-sm lv-btn-detail">Detalle</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div>
+        <div class="col-12 col-sm-6 col-lg-3">
           <div class="lv-book-card">
-            <img class="lv-book-cover" src="https://covers.openlibrary.org/b/id/12645114-L.jpg" alt="Portada de Rayuela" />
+            <img class="lv-book-cover" src="https://covers.openlibrary.org/b/id/12645114-L.jpg" alt="Portada de Rayuela">
             <div class="lv-book-body">
               <p class="lv-book-title">Rayuela</p>
               <p class="lv-book-author">Julio Cortázar</p>
               <div class="lv-stars">★★★★☆</div>
-              <div class="uk-flex uk-flex-between uk-flex-middle uk-margin-small-top">
+
+              <div class="d-flex justify-content-between align-items-center mt-2">
                 <span class="lv-price">₡8.900</span>
-                <a href="detalle.html" class="uk-button uk-button-default uk-button-small">Detalle</a>
+                <a href="detalle.html" class="btn btn-sm lv-btn-detail">Detalle</a>
               </div>
             </div>
           </div>
         </div>
 
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <!-- ====================== PIE DE PÁGINA ====================== -->
-  <footer class="lv-footer">
-    <div class="uk-container">
-      <div class="uk-child-width-1-1 uk-child-width-1-3@m uk-grid-large" uk-grid>
+  <section class="lv-home-banner-section">
+    <div class="container">
+      <div class="lv-home-banner">
         <div>
-          <h4>Librería Letras Vivas</h4>
-          <p>Promoviendo la lectura desde 2010. Más de 25.000 títulos nacionales e internacionales con envío a todo Costa Rica.</p>
+          <p class="lv-home-label">Compra sencilla</p>
+          <h2>Tu próxima lectura está más cerca de lo que crees</h2>
+          <p>Busca tu libro favorito, revisa sus detalles y agrégalo al carrito para continuar con tu compra.</p>
         </div>
-        <div>
-          <h4>Contacto</h4>
-          <ul class="uk-list">
-            <li><span uk-icon="icon: location"></span> Av. Central, San José, Costa Rica</li>
-            <li><span uk-icon="icon: receiver"></span> +506 2222-3344</li>
-            <li><span uk-icon="icon: mail"></span> info@letrasvivas.cr</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Enlaces</h4>
-          <ul class="uk-list">
-            <li><a href="catalogo.html">Catálogo</a></li>
-            <li><a href="busqueda.html">Búsqueda</a></li>
-            <li><a href="carrito.html">Carrito de compras</a></li>
-            <li><a href="index.html">Política de privacidad</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="lv-footer-bottom">
-        © 2026 Librería Letras Vivas. Todos los derechos reservados. | Diseñado por el equipo de desarrollo Letras Vivas.
+
+        <a href="catalogo.html" class="btn lv-btn-cta">Explorar libros</a>
       </div>
     </div>
-  </footer>
+  </section>
+
+</main>
+
+<footer class="lv-footer" id="contacto">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-12 col-md-4">
+        <h4>Librería Letras Vivas</h4>
+        <p>Promoviendo la lectura desde 2010. Más de 25.000 títulos nacionales e internacionales con envío a todo Costa Rica.</p>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <h4>Contacto</h4>
+        <ul class="list-unstyled">
+          <li>Av. Central, San José, Costa Rica</li>
+          <li>+506 2222-3344</li>
+          <li>info@letrasvivas.cr</li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <h4>Enlaces</h4>
+        <ul class="list-unstyled">
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="busqueda.html">Búsqueda</a></li>
+          <li><a href="carrito.html">Carrito de compras</a></li>
+          <li><a href="index.html">Política de privacidad</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="lv-footer-bottom">
+      © 2026 Librería Letras Vivas. Todos los derechos reservados. |
+      Diseñado por el equipo de desarrollo Letras Vivas.
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

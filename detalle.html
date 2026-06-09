@@ -3,226 +3,293 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Librería Letras Vivas | El Nombre del Viento</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.6/dist/css/uikit.min.css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.6/dist/js/uikit.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.6/dist/js/uikit-icons.min.js"></script>
 </head>
+
 <body>
 
-  <!-- ====================== CABECERA ====================== -->
-  <header>
-    <div class="lv-topbar">
-      <div class="uk-container">
-        <div class="uk-grid-small uk-flex-middle" uk-grid>
-          <div class="uk-width-auto">
-            <a href="index.html" class="lv-logo">
-              <span uk-icon="icon: bookmark; ratio: 1.5" class="lv-logo-icon"></span>
-              <span class="uk-visible@s">Librería<br />Letras Vivas<span>Tu librería en línea</span></span>
-            </a>
-          </div>
-          <div class="uk-width-expand">
-            <form class="lv-search uk-flex" action="busqueda.html" method="get">
-              <input class="uk-input uk-form-blank" type="search" name="q"
-                     placeholder="Buscar libro, autor, categoría..." aria-label="Buscar" />
-              <button class="uk-button uk-button-text uk-margin-small-right" type="submit" uk-icon="icon: search"></button>
-            </form>
-          </div>
-          <div class="uk-width-auto">
-            <a href="carrito.html" class="lv-cart-link">
-              <span uk-icon="icon: cart"></span> Carrito <span class="uk-badge">3</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+<header>
+  <div class="lv-topbar">
+    <div class="container">
+      <div class="row align-items-center g-3">
 
-    <nav class="lv-navbar uk-navbar-container" uk-navbar>
-      <div class="uk-container">
-        <div class="uk-navbar-left">
-          <ul class="uk-navbar-nav">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="catalogo.html">Catálogo</a></li>
-            <li>
-              <a href="catalogo.html">Categorías <span uk-icon="icon: triangle-down"></span></a>
-              <div class="uk-navbar-dropdown">
-                <ul class="uk-nav uk-navbar-dropdown-nav">
-                  <li><a href="catalogo.html">Novela</a></li>
-                  <li><a href="catalogo.html">Fantasía</a></li>
-                  <li><a href="catalogo.html">Ciencia Ficción</a></li>
-                  <li><a href="catalogo.html">Misterio</a></li>
-                  <li><a href="catalogo.html">Romance</a></li>
-                </ul>
-              </div>
-            </li>
-            <li><a href="catalogo.html">Autores</a></li>
-            <li><a href="catalogo.html">Novedades</a></li>
-            <li><a href="index.html">Contacto</a></li>
-          </ul>
+        <div class="col-12 col-md-3">
+          <a href="index.html" class="lv-logo">
+            <div class="lv-logo-libro"><span></span></div>
+            <div>
+              Librería<br>
+              Letras Vivas
+              <span>Tu librería en línea</span>
+            </div>
+          </a>
         </div>
-      </div>
-    </nav>
-  </header>
 
-  <!-- ====================== MIGAS DE PAN ====================== -->
-  <div class="lv-breadcrumb">
-    <div class="uk-container">
-      <ul class="uk-breadcrumb uk-margin-remove">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="catalogo.html">Catálogo</a></li>
-        <li><span>El Nombre del Viento</span></li>
-      </ul>
+        <div class="col-12 col-md-6">
+          <form class="lv-search d-flex" action="busqueda.html" method="get">
+            <input class="form-control" type="search" name="q" placeholder="Buscar libro, autor, categoría..." aria-label="Buscar">
+            <button class="btn lv-search-btn" type="submit">Buscar</button>
+          </form>
+        </div>
+
+        <div class="col-12 col-md-3 text-md-end">
+          <a href="carrito.html" class="lv-cart-link">
+            Carrito <span class="badge lv-cart-badge">3</span>
+          </a>
+        </div>
+
+      </div>
     </div>
   </div>
 
-  <!-- ====================== CONTENIDO ====================== -->
-  <main class="uk-container uk-margin-top">
+  <nav class="navbar navbar-expand-lg lv-navbar">
+    <div class="container">
+      <a class="navbar-brand d-lg-none" href="index.html">Letras Vivas</a>
 
-    <!-- Ficha del libro -->
-    <div class="uk-grid-large" uk-grid>
-      <div class="uk-width-1-3@m uk-text-center">
-        <img class="lv-book-cover" style="height:auto;max-height:480px"
-             src="https://covers.openlibrary.org/b/id/8567176-L.jpg" alt="Portada de El Nombre del Viento" />
-      </div>
-      <div class="uk-width-expand@m">
-        <h1 class="uk-margin-remove-bottom">El Nombre del Viento</h1>
-        <p class="uk-text-lead uk-margin-remove-top">Patrick Rothfuss</p>
-        <div class="lv-stars uk-margin-small-bottom">
-          ★★★★★ <span class="uk-text-meta lv-mono">(128 opiniones)</span>
-        </div>
-        <p class="lv-price" style="font-size:2rem">₡8.500</p>
-        <p><span class="uk-label uk-label-success">Disponible (En stock)</span></p>
+      <button class="navbar-toggler lv-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="uk-grid-small uk-flex-middle uk-margin" uk-grid>
-          <div class="uk-width-auto">
-            <label class="lv-mono uk-text-meta">Cantidad</label>
-          </div>
-          <div class="uk-width-small">
-            <input class="uk-input" type="number" min="1" value="1" />
-          </div>
-          <div class="uk-width-auto">
-            <a href="carrito.html" class="uk-button uk-button-danger uk-button-large">
-              <span uk-icon="icon: cart"></span> Agregar al carrito
-            </a>
-          </div>
-        </div>
+      <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
 
-        <!-- Datos técnicos -->
-        <table class="uk-table uk-table-divider uk-table-small uk-margin-top">
-          <tbody>
-            <tr><td class="lv-mono"><strong>Editorial</strong></td><td>Plaza &amp; Janés</td></tr>
-            <tr><td class="lv-mono"><strong>Idioma</strong></td><td>Español</td></tr>
-            <tr><td class="lv-mono"><strong>Formato</strong></td><td>Tapa blanda — 880 páginas</td></tr>
-            <tr><td class="lv-mono"><strong>ISBN</strong></td><td>978-84-0137-200-7</td></tr>
-            <tr><td class="lv-mono"><strong>Año</strong></td><td>2009</td></tr>
-          </tbody>
-        </table>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="catalogo.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorías</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="catalogo.html">Novela</a></li>
+              <li><a class="dropdown-item" href="catalogo.html">Fantasía</a></li>
+              <li><a class="dropdown-item" href="catalogo.html">Ciencia Ficción</a></li>
+              <li><a class="dropdown-item" href="catalogo.html">Misterio</a></li>
+              <li><a class="dropdown-item" href="catalogo.html">Romance</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="autores.html">Autores</a></li>
+          <li class="nav-item"><a class="nav-link" href="novedades.html">Novedades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
       </div>
     </div>
+  </nav>
+</header>
 
-    <!-- Pestañas de contenido -->
-    <ul class="uk-tab uk-margin-large-top" uk-tab>
-      <li class="uk-active"><a href="#">Descripción</a></li>
-      <li><a href="#">Detalles</a></li>
-      <li><a href="#">Opiniones (128)</a></li>
-    </ul>
-    <ul class="uk-switcher uk-margin">
-      <li>
-        <p>«El Nombre del Viento» narra la historia de Kvothe, un joven dotado de un talento extraordinario que se convierte en una leyenda viviente. Relatada por él mismo, la novela recorre su infancia entre artistas trotamundos, su dura supervivencia en las calles de la ciudad de Tarbean y su ingreso en la legendaria Universidad, donde busca desentrañar el misterio de los Chandrian.</p>
-        <p>Primer volumen de la trilogía «Crónica del asesino de reyes», es una obra imprescindible de la fantasía épica contemporánea, alabada por su prosa cuidada y su narrativa envolvente.</p>
-      </li>
-      <li>
-        <!-- Acordeón con detalles adicionales -->
-        <ul uk-accordion>
-          <li class="uk-open">
-            <a class="uk-accordion-title" href="#">Información de envío</a>
-            <div class="uk-accordion-content">
-              <p>Envío a todo Costa Rica en 2 a 4 días hábiles. Envío gratis en compras superiores a ₡25.000.</p>
-            </div>
-          </li>
-          <li>
-            <a class="uk-accordion-title" href="#">Sobre el autor</a>
-            <div class="uk-accordion-content">
-              <p>Patrick Rothfuss (1973) es un escritor estadounidense conocido por su trilogía «Crónica del asesino de reyes». Ha recibido numerosos premios dentro del género de la fantasía.</p>
-            </div>
-          </li>
-          <li>
-            <a class="uk-accordion-title" href="#">Política de devolución</a>
-            <div class="uk-accordion-content">
-              <p>Aceptamos devoluciones dentro de los 15 días posteriores a la compra, siempre que el producto se encuentre en perfecto estado.</p>
-            </div>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <article class="uk-comment uk-margin">
-          <p class="lv-stars">★★★★★</p>
-          <p><strong>María Jiménez</strong> — «Una obra maestra. La prosa de Rothfuss te atrapa desde la primera página.»</p>
-        </article>
-        <article class="uk-comment uk-margin">
-          <p class="lv-stars">★★★★☆</p>
-          <p><strong>Carlos Vargas</strong> — «Excelente lectura, aunque el ritmo decae un poco a la mitad. Lo recomiendo.»</p>
-        </article>
-      </li>
-    </ul>
+<div class="lv-breadcrumb">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb py-2">
+        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+        <li class="breadcrumb-item"><a href="catalogo.html">Catálogo</a></li>
+        <li class="breadcrumb-item active" aria-current="page">El Nombre del Viento</li>
+      </ol>
+    </nav>
+  </div>
+</div>
 
-    <!-- Navegación asociativa: libros relacionados -->
-    <section class="uk-margin-large-top">
+<main class="lv-page">
+  <div class="container">
+
+    <section class="row g-5 align-items-start mb-5">
+      <div class="col-12 col-lg-4 text-center">
+        <div class="lv-form-card">
+          <img class="img-fluid rounded" src="https://covers.openlibrary.org/b/id/8567176-L.jpg" alt="Portada de El Nombre del Viento">
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-8">
+        <h1 class="mb-1">El Nombre del Viento</h1>
+        <p class="lv-page-lead mb-2">Patrick Rothfuss</p>
+
+        <p class="lv-stars mb-2">
+          ★★★★★ <span class="text-muted lv-mono">(128 opiniones)</span>
+        </p>
+
+        <p class="lv-price" style="font-size: 2rem;">₡8.500</p>
+
+        <p><span class="lv-stock">Disponible en stock</span></p>
+
+        <p>
+          Una historia de fantasía épica sobre Kvothe, un joven con talento extraordinario
+          que narra su vida, sus pérdidas y su búsqueda de respuestas.
+        </p>
+
+        <div class="row g-3 align-items-end my-3">
+          <div class="col-12 col-sm-3">
+            <label class="form-label" for="cantidad">Cantidad</label>
+            <input class="form-control" id="cantidad" type="number" min="1" value="1">
+          </div>
+
+          <div class="col-12 col-sm-5">
+            <a href="carrito.html" class="btn lv-btn-cta w-100">Agregar al carrito</a>
+          </div>
+        </div>
+
+        <div class="lv-table-card mt-4">
+          <table class="table table-sm mb-0">
+            <tbody>
+              <tr><td><strong>Editorial</strong></td><td>Plaza &amp; Janés</td></tr>
+              <tr><td><strong>Idioma</strong></td><td>Español</td></tr>
+              <tr><td><strong>Formato</strong></td><td>Tapa blanda — 880 páginas</td></tr>
+              <tr><td><strong>ISBN</strong></td><td>978-84-0137-200-7</td></tr>
+              <tr><td><strong>Año</strong></td><td>2009</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="lv-form-card mb-5">
+      <ul class="nav nav-tabs lv-tabs" id="detalleTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="descripcion-tab" data-bs-toggle="tab" data-bs-target="#descripcion" type="button" role="tab">
+            Descripción
+          </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="detalles-tab" data-bs-toggle="tab" data-bs-target="#detalles" type="button" role="tab">
+            Detalles
+          </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="opiniones-tab" data-bs-toggle="tab" data-bs-target="#opiniones" type="button" role="tab">
+            Opiniones
+          </button>
+        </li>
+      </ul>
+
+      <div class="tab-content pt-4" id="detalleTabsContent">
+        <div class="tab-pane fade show active" id="descripcion" role="tabpanel">
+          <p>
+            «El Nombre del Viento» narra la historia de Kvothe, un joven dotado
+            de un talento extraordinario que se convierte en una leyenda viviente.
+          </p>
+          <p>
+            Primer volumen de la trilogía «Crónica del asesino de reyes», es una
+            obra destacada de la fantasía épica contemporánea.
+          </p>
+        </div>
+
+        <div class="tab-pane fade" id="detalles" role="tabpanel">
+          <div class="accordion" id="accordionDetalle">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#envio">
+                  Información de envío
+                </button>
+              </h2>
+              <div id="envio" class="accordion-collapse collapse show" data-bs-parent="#accordionDetalle">
+                <div class="accordion-body">
+                  Envío a todo Costa Rica en 2 a 4 días hábiles. Envío gratis en compras superiores a ₡25.000.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#autor">
+                  Sobre el autor
+                </button>
+              </h2>
+              <div id="autor" class="accordion-collapse collapse" data-bs-parent="#accordionDetalle">
+                <div class="accordion-body">
+                  Patrick Rothfuss es un escritor estadounidense conocido por su trilogía «Crónica del asesino de reyes».
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#devolucion">
+                  Política de devolución
+                </button>
+              </h2>
+              <div id="devolucion" class="accordion-collapse collapse" data-bs-parent="#accordionDetalle">
+                <div class="accordion-body">
+                  Se aceptan devoluciones dentro de los 15 días posteriores a la compra si el producto está en buen estado.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="opiniones" role="tabpanel">
+          <article class="mb-3">
+            <p class="lv-stars mb-1">★★★★★</p>
+            <p><strong>María Jiménez</strong> — Una obra que atrapa desde la primera página.</p>
+          </article>
+
+          <article>
+            <p class="lv-stars mb-1">★★★★☆</p>
+            <p><strong>Carlos Vargas</strong> — Excelente lectura, muy recomendada para amantes de la fantasía.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
       <h2 class="lv-section-title">Libros relacionados</h2>
-      <div class="uk-child-width-1-2 uk-child-width-1-4@m uk-grid-small" uk-grid>
 
-        <div>
+      <div class="row g-4">
+
+        <div class="col-12 col-sm-6 col-lg-3">
           <div class="lv-book-card">
-            <img class="lv-book-cover" src="https://covers.openlibrary.org/b/id/10521270-L.jpg" alt="El Hobbit" />
+            <img class="lv-book-cover" src="https://covers.openlibrary.org/b/id/10521270-L.jpg" alt="El Hobbit">
             <div class="lv-book-body">
               <p class="lv-book-title">El Hobbit</p>
               <p class="lv-book-author">J. R. R. Tolkien</p>
-              <div class="uk-flex uk-flex-between uk-flex-middle uk-margin-small-top">
+              <div class="d-flex justify-content-between align-items-center mt-2">
                 <span class="lv-price">₡10.500</span>
-                <a href="detalle.html" class="uk-button uk-button-default uk-button-small">Detalle</a>
+                <a href="detalle.html" class="btn btn-sm lv-btn-detail">Detalle</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div>
+        <div class="col-12 col-sm-6 col-lg-3">
           <div class="lv-book-card">
-            <img class="lv-book-cover" src="https://covers.openlibrary.org/b/id/12003830-L.jpg" alt="Juego de Tronos" />
+            <img class="lv-book-cover" src="https://covers.openlibrary.org/b/id/12003830-L.jpg" alt="Juego de Tronos">
             <div class="lv-book-body">
               <p class="lv-book-title">Juego de Tronos</p>
               <p class="lv-book-author">George R. R. Martin</p>
-              <div class="uk-flex uk-flex-between uk-flex-middle uk-margin-small-top">
+              <div class="d-flex justify-content-between align-items-center mt-2">
                 <span class="lv-price">₡11.900</span>
-                <a href="detalle.html" class="uk-button uk-button-default uk-button-small">Detalle</a>
+                <a href="detalle.html" class="btn btn-sm lv-btn-detail">Detalle</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div>
+        <div class="col-12 col-sm-6 col-lg-3">
           <div class="lv-book-card">
-            <img class="lv-book-cover" src="https://covers.openlibrary.org/b/id/240727-L.jpg" alt="Harry Potter" />
+            <img class="lv-book-cover" src="https://covers.openlibrary.org/b/id/240727-L.jpg" alt="Harry Potter">
             <div class="lv-book-body">
               <p class="lv-book-title">Harry Potter y la piedra filosofal</p>
               <p class="lv-book-author">J. K. Rowling</p>
-              <div class="uk-flex uk-flex-between uk-flex-middle uk-margin-small-top">
+              <div class="d-flex justify-content-between align-items-center mt-2">
                 <span class="lv-price">₡9.300</span>
-                <a href="detalle.html" class="uk-button uk-button-default uk-button-small">Detalle</a>
+                <a href="detalle.html" class="btn btn-sm lv-btn-detail">Detalle</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div>
+        <div class="col-12 col-sm-6 col-lg-3">
           <div class="lv-book-card">
-            <img class="lv-book-cover" src="https://covers.openlibrary.org/b/id/8259447-L.jpg" alt="Fahrenheit 451" />
+            <img class="lv-book-cover" src="https://covers.openlibrary.org/b/id/8259447-L.jpg" alt="Fahrenheit 451">
             <div class="lv-book-body">
               <p class="lv-book-title">Fahrenheit 451</p>
               <p class="lv-book-author">Ray Bradbury</p>
-              <div class="uk-flex uk-flex-between uk-flex-middle uk-margin-small-top">
+              <div class="d-flex justify-content-between align-items-center mt-2">
                 <span class="lv-price">₡7.500</span>
-                <a href="detalle.html" class="uk-button uk-button-default uk-button-small">Detalle</a>
+                <a href="detalle.html" class="btn btn-sm lv-btn-detail">Detalle</a>
               </div>
             </div>
           </div>
@@ -230,39 +297,46 @@
 
       </div>
     </section>
-  </main>
 
-  <!-- ====================== PIE DE PÁGINA ====================== -->
-  <footer class="lv-footer">
-    <div class="uk-container">
-      <div class="uk-child-width-1-1 uk-child-width-1-3@m uk-grid-large" uk-grid>
-        <div>
-          <h4>Librería Letras Vivas</h4>
-          <p>Promoviendo la lectura desde 2010. Más de 25.000 títulos nacionales e internacionales con envío a todo Costa Rica.</p>
-        </div>
-        <div>
-          <h4>Contacto</h4>
-          <ul class="uk-list">
-            <li><span uk-icon="icon: location"></span> Av. Central, San José, Costa Rica</li>
-            <li><span uk-icon="icon: receiver"></span> +506 2222-3344</li>
-            <li><span uk-icon="icon: mail"></span> info@letrasvivas.cr</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Enlaces</h4>
-          <ul class="uk-list">
-            <li><a href="catalogo.html">Catálogo</a></li>
-            <li><a href="busqueda.html">Búsqueda</a></li>
-            <li><a href="carrito.html">Carrito de compras</a></li>
-            <li><a href="index.html">Política de privacidad</a></li>
-          </ul>
-        </div>
+  </div>
+</main>
+
+<footer class="lv-footer" id="contacto">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-12 col-md-4">
+        <h4>Librería Letras Vivas</h4>
+        <p>Promoviendo la lectura desde 2010. Más de 25.000 títulos nacionales e internacionales con envío a todo Costa Rica.</p>
       </div>
-      <div class="lv-footer-bottom">
-        © 2026 Librería Letras Vivas. Todos los derechos reservados. | Diseñado por el equipo de desarrollo Letras Vivas.
+
+      <div class="col-12 col-md-4">
+        <h4>Contacto</h4>
+        <ul class="list-unstyled">
+          <li>Av. Central, San José, Costa Rica</li>
+          <li>+506 2222-3344</li>
+          <li>info@letrasvivas.cr</li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <h4>Enlaces</h4>
+        <ul class="list-unstyled">
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="busqueda.html">Búsqueda</a></li>
+          <li><a href="carrito.html">Carrito de compras</a></li>
+          <li><a href="index.html">Política de privacidad</a></li>
+        </ul>
       </div>
     </div>
-  </footer>
+
+    <div class="lv-footer-bottom">
+      © 2026 Librería Letras Vivas. Todos los derechos reservados. |
+      Diseñado por el equipo de desarrollo Letras Vivas.
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
