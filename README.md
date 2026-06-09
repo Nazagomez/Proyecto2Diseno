@@ -1,41 +1,30 @@
 # Librería Letras Vivas — Prototipo (Proyecto 2)
 
-Prototipo HTML de una tienda en línea de libros, codificado a partir de los bosquejos
-de pantalla del Proyecto 1. Implementa los principios de diseño estudiados en el curso:
-cabeceras de página, navegación global, migas de pan, búsqueda, columna lateral de
-categorías, pie de página y páginas de comercio electrónico con formularios.
+Prototipo HTML de una tienda en línea de libros con **Bootstrap 5** y datos del catálogo quemados en `js/libros.js` (fuente: `catalogo_libros_organizado.xlsx`).
 
-## Framework CSS utilizado
+## Framework CSS
 
-**UIKit 3** (cargado por CDN). Se eligió entre Skeleton, Milligram y UIKit por ser el
-más completo: aporta de forma nativa los componentes que pide el enunciado
-(navbar, breadcrumb, cards, grid, paginación, tabs, accordion, slideshow y formularios).
+**Bootstrap 5** (CDN) + estilos propios en `css/styles.css`.
 
-## Páginas del prototipo
+## Estructura
 
-| Archivo            | Tipo de página            | Mecanismos aplicados                                        |
-|--------------------|---------------------------|------------------------------------------------------------|
-| `index.html`       | Inicio                    | Cabecera, navegación global, hero/carrusel, rejilla         |
-| `catalogo.html`    | Navegación por categorías | Columna lateral de filtros, rejilla, paginación             |
-| `busqueda.html`    | Búsqueda                  | Campo de palabras clave, lista de resultados, paginación    |
-| `detalle.html`     | Contenido                 | Tarjetas, pestañas, acordeón, navegación asociativa         |
-| `carrito.html`     | Comercio electrónico      | Tabla de productos y resumen de compra                      |
-| `facturacion.html` | Comercio electrónico      | Formularios estructurados (datos, dirección, entrega, pago) |
+| Archivo | Descripción |
+|---------|-------------|
+| `index.html` | Inicio con carrusel, categorías y destacados |
+| `catalogo.html` | 30 libros con filtros y paginación |
+| `busqueda.html` | Búsqueda por palabras clave |
+| `detalle.html?id=N` | Ficha del libro, pestañas y acordeón |
+| `carrito.html` | Carrito con 3 productos del catálogo |
+| `facturacion.html` | Formulario de facturación y entrega |
+| `js/libros.js` | **Datos quemados** de los 30 libros |
+| `js/app.js` | Renderizado y utilidades |
 
-## Elementos transversales
-
-- **Cabecera**: enlace a inicio (logo), búsqueda y acceso al carrito.
-- **Navegación global**: Inicio, Catálogo, Categorías, Autores, Novedades, Contacto.
-- **Migas de pan**: presentes en todas las páginas internas.
-- **Columna lateral**: filtros por categoría, idioma y precio en el catálogo.
-- **Pie de página**: autor, contactos y derechos de autor.
-
-## Cómo ejecutarlo localmente
-
-Abra `index.html` en el navegador, o sirva la carpeta:
+## Cómo ejecutarlo
 
 ```bash
 cd libreria-letras-vivas
 python3 -m http.server 8000
 # Visite http://localhost:8000
 ```
+
+O abra `index.html` directamente en el navegador.

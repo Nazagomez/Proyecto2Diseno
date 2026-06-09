@@ -3,245 +3,87 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Librería Letras Vivas | Facturación y entrega</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.6/dist/css/uikit.min.css" />
+  <title>Librería Letras Vivas | Facturación</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.6/dist/js/uikit.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.6/dist/js/uikit-icons.min.js"></script>
 </head>
-<body>
+<body data-page="facturacion">
 
-  <!-- ====================== CABECERA ====================== -->
   <header>
-    <div class="lv-topbar">
-      <div class="uk-container">
-        <div class="uk-grid-small uk-flex-middle" uk-grid>
-          <div class="uk-width-auto">
-            <a href="index.html" class="lv-logo">
-              <span uk-icon="icon: bookmark; ratio: 1.5" class="lv-logo-icon"></span>
-              <span class="uk-visible@s">Librería<br />Letras Vivas<span>Tu librería en línea</span></span>
-            </a>
-          </div>
-          <div class="uk-width-expand">
-            <form class="lv-search uk-flex" action="busqueda.html" method="get">
-              <input class="uk-input uk-form-blank" type="search" name="q"
-                     placeholder="Buscar libro, autor, categoría..." aria-label="Buscar" />
-              <button class="uk-button uk-button-text uk-margin-small-right" type="submit" uk-icon="icon: search"></button>
-            </form>
-          </div>
-          <div class="uk-width-auto">
-            <a href="carrito.html" class="lv-cart-link">
-              <span uk-icon="icon: cart"></span> Carrito <span class="uk-badge">3</span>
-            </a>
-          </div>
-        </div>
+    <div class="lv-topbar py-3">
+      <div class="container">
+        <a href="index.html" class="lv-logo text-decoration-none"><i class="bi bi-bookmark-fill text-warning"></i> Librería Letras Vivas</a>
       </div>
     </div>
-
-    <nav class="lv-navbar uk-navbar-container" uk-navbar>
-      <div class="uk-container">
-        <div class="uk-navbar-left">
-          <ul class="uk-navbar-nav">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="catalogo.html">Catálogo</a></li>
-            <li>
-              <a href="catalogo.html">Categorías <span uk-icon="icon: triangle-down"></span></a>
-              <div class="uk-navbar-dropdown">
-                <ul class="uk-nav uk-navbar-dropdown-nav">
-                  <li><a href="catalogo.html">Novela</a></li>
-                  <li><a href="catalogo.html">Fantasía</a></li>
-                  <li><a href="catalogo.html">Ciencia Ficción</a></li>
-                  <li><a href="catalogo.html">Misterio</a></li>
-                  <li><a href="catalogo.html">Romance</a></li>
-                </ul>
-              </div>
-            </li>
-            <li><a href="catalogo.html">Autores</a></li>
-            <li><a href="catalogo.html">Novedades</a></li>
-            <li><a href="index.html">Contacto</a></li>
-          </ul>
-        </div>
-      </div>
+    <nav class="navbar navbar-dark lv-navbar lv-sans">
+      <div class="container"><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="carrito.html">← Carrito</a></li></ul></div>
     </nav>
   </header>
 
-  <!-- ====================== MIGAS DE PAN ====================== -->
-  <div class="lv-breadcrumb">
-    <div class="uk-container">
-      <ul class="uk-breadcrumb uk-margin-remove">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="carrito.html">Carrito</a></li>
-        <li><span>Facturación y entrega</span></li>
-      </ul>
-    </div>
+  <div class="lv-breadcrumb-bar py-2 lv-sans">
+    <div class="container"><nav aria-label="breadcrumb"><ol class="breadcrumb mb-0"><li class="breadcrumb-item"><a href="index.html">Inicio</a></li><li class="breadcrumb-item"><a href="carrito.html">Carrito</a></li><li class="breadcrumb-item active">Facturación y entrega</li></ol></nav></div>
   </div>
 
-  <!-- ====================== CONTENIDO ====================== -->
-  <main class="uk-container uk-margin-top">
+  <main class="container my-4">
     <h2 class="lv-section-title">Facturación y entrega</h2>
-
     <form>
-      <div class="uk-grid-large" uk-grid>
-
-        <!-- Columna de formularios -->
-        <div class="uk-width-expand@m">
-
-          <!-- Datos personales (formato estructurado) -->
-          <div class="lv-sidebar uk-margin-bottom">
-            <h3 class="uk-h4">Datos personales</h3>
-            <div class="uk-margin">
-              <label class="uk-form-label" for="nombre">Nombre completo *</label>
-              <input class="uk-input" id="nombre" type="text" placeholder="Ej.: Ana María López" required />
-            </div>
-            <div class="uk-margin">
-              <label class="uk-form-label" for="correo">Correo electrónico *</label>
-              <div class="uk-inline uk-width-1-1">
-                <span class="uk-form-icon" uk-icon="icon: mail"></span>
-                <input class="uk-input" id="correo" type="email" placeholder="correo@ejemplo.com" required />
-              </div>
-              <span class="uk-text-meta">Le enviaremos la confirmación del pedido a este correo.</span>
-            </div>
-            <div class="uk-margin">
-              <label class="uk-form-label" for="telefono">Teléfono *</label>
-              <div class="uk-inline uk-width-1-1">
-                <span class="uk-form-icon" uk-icon="icon: receiver"></span>
-                <input class="uk-input" id="telefono" type="tel" placeholder="8888-8888" required />
-              </div>
-            </div>
+      <div class="row g-4">
+        <div class="col-lg-8">
+          <div class="lv-sidebar lv-sans mb-4">
+            <h3>Datos personales</h3>
+            <div class="mb-3"><label class="form-label" for="nombre">Nombre completo *</label><input class="form-control" id="nombre" type="text" placeholder="Ej.: Ana María López" required /></div>
+            <div class="mb-3"><label class="form-label" for="correo">Correo electrónico *</label><input class="form-control" id="correo" type="email" placeholder="correo@ejemplo.com" required /><div class="form-text">Le enviaremos la confirmación del pedido a este correo.</div></div>
+            <div class="mb-3"><label class="form-label" for="telefono">Teléfono *</label><input class="form-control" id="telefono" type="tel" placeholder="8888-8888" required /></div>
           </div>
-
-          <!-- Dirección de entrega -->
-          <div class="lv-sidebar uk-margin-bottom">
-            <h3 class="uk-h4">Dirección de entrega</h3>
-            <div class="uk-grid-small" uk-grid>
-              <div class="uk-width-1-2@s uk-margin">
-                <label class="uk-form-label" for="provincia">Provincia *</label>
-                <select class="uk-select" id="provincia" required>
-                  <option value="" disabled selected>Seleccione…</option>
-                  <option>San José</option>
-                  <option>Alajuela</option>
-                  <option>Cartago</option>
-                  <option>Heredia</option>
-                  <option>Guanacaste</option>
-                  <option>Puntarenas</option>
-                  <option>Limón</option>
-                </select>
-              </div>
-              <div class="uk-width-1-2@s uk-margin">
-                <label class="uk-form-label" for="canton">Cantón *</label>
-                <input class="uk-input" id="canton" type="text" placeholder="Ej.: Escazú" required />
-              </div>
+          <div class="lv-sidebar lv-sans mb-4">
+            <h3>Dirección de entrega</h3>
+            <div class="row g-2">
+              <div class="col-md-6"><label class="form-label" for="provincia">Provincia *</label><select class="form-select" id="provincia" required><option value="" disabled selected>Seleccione…</option><option>San José</option><option>Alajuela</option><option>Cartago</option><option>Heredia</option><option>Guanacaste</option><option>Puntarenas</option><option>Limón</option></select></div>
+              <div class="col-md-6"><label class="form-label" for="canton">Cantón *</label><input class="form-control" id="canton" type="text" placeholder="Ej.: Escazú" required /></div>
             </div>
-            <div class="uk-margin">
-              <label class="uk-form-label" for="direccion">Dirección exacta *</label>
-              <textarea class="uk-textarea" id="direccion" rows="3"
-                        placeholder="Barrio, calle, número de casa y señas adicionales" required></textarea>
-            </div>
+            <div class="mt-3"><label class="form-label" for="direccion">Dirección exacta *</label><textarea class="form-control" id="direccion" rows="3" placeholder="Barrio, calle, número de casa y señas adicionales" required></textarea></div>
           </div>
-
-          <!-- Método de entrega (formato permisivo: opciones excluyentes) -->
-          <div class="lv-sidebar uk-margin-bottom">
-            <h3 class="uk-h4">Método de entrega</h3>
-            <div class="uk-margin uk-grid-small uk-child-width-1-1" uk-grid>
-              <label><input class="uk-radio" type="radio" name="entrega" checked /> A domicilio (₡2.000)</label>
-              <label><input class="uk-radio" type="radio" name="entrega" /> Punto de retiro (₡1.000)</label>
-              <label><input class="uk-radio" type="radio" name="entrega" /> Retiro en tienda (gratis)</label>
-            </div>
+          <div class="lv-sidebar lv-sans mb-4">
+            <h3>Método de entrega</h3>
+            <div class="form-check"><input class="form-check-input" type="radio" name="entrega" id="domicilio" checked /><label class="form-check-label" for="domicilio">A domicilio (₡2.000)</label></div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="entrega" id="retiro" /><label class="form-check-label" for="retiro">Punto de retiro (₡1.000)</label></div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="entrega" id="tienda" /><label class="form-check-label" for="tienda">Retiro en tienda (gratis)</label></div>
           </div>
-
-          <!-- Método de pago -->
-          <div class="lv-sidebar">
-            <h3 class="uk-h4">Método de pago</h3>
-            <div class="uk-margin uk-grid-small uk-child-width-1-1" uk-grid>
-              <label><input class="uk-radio" type="radio" name="pago" checked /> Tarjeta de crédito / débito</label>
-              <label><input class="uk-radio" type="radio" name="pago" /> Transferencia bancaria</label>
-              <label><input class="uk-radio" type="radio" name="pago" /> Pago contra entrega</label>
+          <div class="lv-sidebar lv-sans">
+            <h3>Método de pago</h3>
+            <div class="form-check"><input class="form-check-input" type="radio" name="pago" id="tarjeta" checked /><label class="form-check-label" for="tarjeta">Tarjeta de crédito / débito</label></div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="pago" id="transferencia" /><label class="form-check-label" for="transferencia">Transferencia bancaria</label></div>
+            <div class="row g-2 mt-2">
+              <div class="col-12"><label class="form-label" for="num-tarjeta">Número de tarjeta</label><input class="form-control" id="num-tarjeta" type="text" placeholder="0000 0000 0000 0000" inputmode="numeric" /></div>
+              <div class="col-6"><label class="form-label" for="vence">Vence (MM/AA)</label><input class="form-control" id="vence" type="text" placeholder="MM/AA" /></div>
+              <div class="col-6"><label class="form-label" for="cvv">CVV</label><input class="form-control" id="cvv" type="text" placeholder="123" maxlength="4" inputmode="numeric" /></div>
             </div>
-
-            <!-- Datos de tarjeta: rellenar espacios en blanco -->
-            <div class="uk-grid-small uk-margin-top" uk-grid>
-              <div class="uk-width-1-1 uk-margin-small">
-                <label class="uk-form-label" for="tarjeta">Número de tarjeta</label>
-                <input class="uk-input" id="tarjeta" type="text" placeholder="0000 0000 0000 0000" inputmode="numeric" />
-              </div>
-              <div class="uk-width-1-2@s uk-margin-small">
-                <label class="uk-form-label" for="vence">Vence (MM/AA)</label>
-                <input class="uk-input" id="vence" type="text" placeholder="MM/AA" />
-              </div>
-              <div class="uk-width-1-2@s uk-margin-small">
-                <label class="uk-form-label" for="cvv">CVV</label>
-                <input class="uk-input" id="cvv" type="text" placeholder="123" inputmode="numeric" maxlength="4" />
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Resumen del pedido -->
-        <div class="uk-width-1-3@m">
-          <div class="lv-summary">
-            <h3 class="uk-h4">Resumen del pedido</h3>
-            <table class="uk-table uk-table-small uk-table-divider uk-margin-remove">
-              <tbody>
-                <tr><td>El Nombre del Viento</td><td class="uk-text-right lv-mono">₡8.500</td></tr>
-                <tr><td>Cien años de soledad</td><td class="uk-text-right lv-mono">₡9.800</td></tr>
-                <tr><td>1984</td><td class="uk-text-right lv-mono">₡7.200</td></tr>
-              </tbody>
-            </table>
-            <hr />
-            <table class="uk-table uk-table-small uk-margin-remove">
-              <tbody>
-                <tr><td>Subtotal</td><td class="uk-text-right lv-mono">₡25.500</td></tr>
-                <tr><td>Envío</td><td class="uk-text-right lv-mono">₡2.000</td></tr>
-                <tr><td><strong>Total</strong></td><td class="uk-text-right lv-summary-total">₡27.500</td></tr>
-              </tbody>
-            </table>
-
-            <label class="uk-margin-small-top uk-display-block">
-              <input class="uk-checkbox" type="checkbox" /> Acepto los términos y condiciones
-            </label>
-
-            <button class="uk-button uk-button-danger uk-width-1-1 uk-margin-top" type="submit">
-              Confirmar pedido
-            </button>
           </div>
         </div>
-
+        <div class="col-lg-4">
+          <div class="lv-sidebar lv-sans">
+            <h3>Resumen del pedido</h3>
+            <table class="table table-sm"><tbody id="facturacion-items"></tbody></table>
+            <table class="table table-sm">
+              <tr><td>Subtotal</td><td class="text-end" id="facturacion-subtotal"></td></tr>
+              <tr><td>Envío</td><td class="text-end">₡2.000</td></tr>
+              <tr><th>Total</th><th class="text-end lv-price" id="facturacion-total"></th></tr>
+            </table>
+            <div class="form-check my-3"><input class="form-check-input" type="checkbox" id="terminos" /><label class="form-check-label" for="terminos">Acepto los términos y condiciones</label></div>
+            <button class="btn btn-danger w-100" type="submit">Confirmar pedido</button>
+          </div>
+        </div>
       </div>
     </form>
   </main>
 
-  <!-- ====================== PIE DE PÁGINA ====================== -->
-  <footer class="lv-footer">
-    <div class="uk-container">
-      <div class="uk-child-width-1-1 uk-child-width-1-3@m uk-grid-large" uk-grid>
-        <div>
-          <h4>Librería Letras Vivas</h4>
-          <p>Promoviendo la lectura desde 2010. Más de 25.000 títulos nacionales e internacionales con envío a todo Costa Rica.</p>
-        </div>
-        <div>
-          <h4>Contacto</h4>
-          <ul class="uk-list">
-            <li><span uk-icon="icon: location"></span> Av. Central, San José, Costa Rica</li>
-            <li><span uk-icon="icon: receiver"></span> +506 2222-3344</li>
-            <li><span uk-icon="icon: mail"></span> info@letrasvivas.cr</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Enlaces</h4>
-          <ul class="uk-list">
-            <li><a href="catalogo.html">Catálogo</a></li>
-            <li><a href="busqueda.html">Búsqueda</a></li>
-            <li><a href="carrito.html">Carrito de compras</a></li>
-            <li><a href="index.html">Política de privacidad</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="lv-footer-bottom">
-        © 2026 Librería Letras Vivas. Todos los derechos reservados. | Diseñado por el equipo de desarrollo Letras Vivas.
-      </div>
-    </div>
+  <footer class="lv-footer py-5 mt-5">
+    <div class="container text-center small">© 2026 Librería Letras Vivas. Todos los derechos reservados.</div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/libros.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>

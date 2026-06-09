@@ -1,154 +1,73 @@
-/* ===========================================================
-   Librería Letras Vivas - Estilos personalizados
-   Complementan el framework UIKit
-   =========================================================== */
+/* Librería Letras Vivas — Estilos personalizados (Bootstrap 5) */
 
 :root {
-  --color-primario: #2c3e50;
-  --color-primario-oscuro: #1a252f;
-  --color-acento: #c0392b;
-  --color-cta: #e85d5d;
-  --color-cta-hover: #d64545;
-  --color-fondo: #f7f5f0;
-  --color-tarjeta: #ffffff;
-  --color-texto-suave: #7f8c8d;
-  --color-dorado: #e0c9a6;
-  --radio: 12px;
-  --sombra-suave: 0 4px 24px rgba(44, 62, 80, 0.08);
+  --lv-primario: #2c3e50;
+  --lv-primario-oscuro: #1a252f;
+  --lv-acento: #c0392b;
+  --lv-cta: #e85d5d;
+  --lv-fondo: #f7f5f0;
+  --lv-dorado: #e0c9a6;
 }
 
 body {
-  background-color: var(--color-fondo);
-  color: #2d2d2d;
-  font-family: "Georgia", "Times New Roman", serif;
-  line-height: 1.6;
+  background-color: var(--lv-fondo);
+  font-family: Georgia, "Times New Roman", serif;
 }
 
-/* ---------- Cabecera ---------- */
+.lv-sans {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
 .lv-topbar {
-  background-color: var(--color-primario-oscuro);
-  color: #fff;
-  padding: 14px 0;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  background-color: var(--lv-primario-oscuro);
 }
 
 .lv-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
   color: #fff;
   font-weight: 700;
-  font-size: 1.25rem;
   line-height: 1.1;
 }
 
-.lv-logo span {
+.lv-logo small {
   display: block;
-  font-size: 0.7rem;
-  font-weight: 400;
+  font-size: 0.65rem;
   letter-spacing: 2px;
-  color: #e0c9a6;
+  color: var(--lv-dorado);
   text-transform: uppercase;
 }
 
-.lv-logo-icon {
-  font-size: 1.8rem;
-  color: #e0c9a6;
+.lv-navbar {
+  background-color: var(--lv-primario) !important;
+  border-bottom: 3px solid var(--lv-acento);
 }
 
-.lv-search {
-  background: #fff;
-  border-radius: 30px;
-  padding: 6px 8px 6px 16px;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
-}
-
-.lv-search input {
-  border: none;
-  background: transparent;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 0.95rem;
-}
-
-.lv-search button {
-  color: var(--color-primario);
-}
-
-.lv-cart-link {
-  color: #fff !important;
-  font-weight: 600;
-}
-
-.lv-cart-link .uk-badge {
-  background-color: var(--color-acento);
-}
-
-/* ---------- Navegación global ---------- */
-nav.lv-navbar.uk-navbar-container {
-  background-color: var(--color-primario) !important;
-  border-bottom: 3px solid var(--color-acento);
-}
-
-nav.lv-navbar .uk-navbar-nav > li > a {
-  color: #f5f5f5 !important;
+.lv-navbar .nav-link {
   text-transform: uppercase;
   font-size: 0.78rem;
   font-weight: 600;
-  letter-spacing: 1.2px;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  min-height: 52px;
-  padding: 0 18px;
-  transition: color 0.2s ease, background-color 0.2s ease;
+  letter-spacing: 1px;
 }
 
-nav.lv-navbar .uk-navbar-nav > li > a:hover,
-nav.lv-navbar .uk-navbar-nav > li.uk-active > a {
-  color: #fff !important;
-  background-color: rgba(255, 255, 255, 0.08);
+.lv-navbar .nav-link.active {
+  border-bottom: 3px solid var(--lv-acento);
 }
 
-nav.lv-navbar .uk-navbar-nav > li.uk-active > a {
-  box-shadow: inset 0 -3px 0 var(--color-acento);
-}
-
-nav.lv-navbar .uk-navbar-dropdown {
-  border-radius: var(--radio);
-  box-shadow: var(--sombra-suave);
-}
-
-/* ---------- Migas de pan ---------- */
-.lv-breadcrumb {
+.lv-breadcrumb-bar {
   background-color: #ece8df;
-  padding: 8px 0;
-  font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 0.85rem;
 }
 
-/* ---------- Barra lateral ---------- */
-.lv-sidebar {
-  background-color: var(--color-tarjeta);
-  border: 1px solid #e2ddd2;
-  border-radius: var(--radio);
-  padding: 20px;
-}
-
-.lv-sidebar h3,
-.lv-sidebar .uk-h4 {
+.lv-section-title {
   font-family: "Helvetica Neue", Arial, sans-serif;
-  border-bottom: 2px solid var(--color-acento);
-  padding-bottom: 8px;
-  margin-top: 0;
+  border-left: 5px solid var(--lv-acento);
+  padding-left: 14px;
+  font-weight: 700;
+  color: var(--lv-primario);
 }
 
-/* ---------- Tarjetas de libro ---------- */
 .lv-book-card {
-  background-color: var(--color-tarjeta);
-  border: 1px solid #e2ddd2;
-  border-radius: var(--radio);
-  overflow: hidden;
-  height: 100%;
-  box-shadow: var(--sombra-suave);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
+  border-color: #e2ddd2;
 }
 
 .lv-book-card:hover {
@@ -157,211 +76,100 @@ nav.lv-navbar .uk-navbar-dropdown {
 }
 
 .lv-book-cover {
-  width: 100%;
   height: 220px;
   object-fit: cover;
   background-color: #d9d3c7;
 }
 
-.lv-book-body {
-  padding: 12px 14px 16px;
-}
-
 .lv-book-title {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 700;
-  margin: 0 0 2px;
-  line-height: 1.2;
-}
-
-.lv-book-author {
-  color: var(--color-texto-suave);
-  font-size: 0.85rem;
-  margin: 0 0 8px;
 }
 
 .lv-price {
-  color: var(--color-acento);
+  color: var(--lv-acento);
   font-weight: 700;
-  font-size: 1.1rem;
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-.lv-stars {
-  color: #f1c40f;
-  font-size: 0.9rem;
-}
-
-/* ---------- Hero / slideshow ---------- */
-.lv-slideshow {
-  border-radius: var(--radio);
-  overflow: hidden;
-  box-shadow: var(--sombra-suave);
-}
-
-.lv-slideshow .uk-slideshow-items {
-  min-height: 320px !important;
-}
-
-.lv-hero-slide {
-  background: linear-gradient(135deg, #2c3e50 0%, #3d5a73 55%, #4a6278 100%);
-  color: #fff;
-  padding: 48px 40px;
-  min-height: 320px;
-  display: flex;
-  align-items: center;
-}
-
-.lv-hero-slide h1 {
-  color: #fff;
-  font-size: clamp(1.8rem, 4vw, 2.6rem);
-  line-height: 1.15;
-  margin: 0 0 16px;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  font-weight: 700;
-}
-
-.lv-hero-slide p {
-  color: #dce4ec;
-  font-size: 1.1rem;
-  margin: 0 0 28px;
-  max-width: 520px;
-}
-
-.lv-hero-icon {
-  color: var(--color-dorado);
-  opacity: 0.9;
-  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2));
-}
-
-.lv-slideshow .uk-dotnav > * > * {
-  background-color: rgba(44, 62, 80, 0.25);
-  border: none;
-  width: 10px;
-  height: 10px;
-}
-
-.lv-slideshow .uk-dotnav > .uk-active > * {
-  background-color: var(--color-acento);
-  transform: scale(1.15);
-}
-
-.lv-btn-cta {
-  background-color: var(--color-cta);
-  color: #fff !important;
-  border: none;
-  border-radius: 6px;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  font-size: 0.85rem;
-  padding: 12px 28px;
-  transition: background-color 0.2s ease, transform 0.15s ease;
-}
-
-.lv-btn-cta:hover {
-  background-color: var(--color-cta-hover);
-  color: #fff !important;
-  transform: translateY(-1px);
-}
-
-/* ---------- Categorías ---------- */
 .lv-cat-tile {
-  background-color: var(--color-tarjeta);
-  border: 1px solid #e2ddd2;
-  border-radius: var(--radio);
-  padding: 28px 12px;
-  text-align: center;
-  transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
   display: block;
-  color: var(--color-primario);
+  background: #fff;
+  border: 1px solid #e2ddd2;
+  border-radius: 12px;
+  padding: 1.5rem 0.75rem;
+  text-align: center;
+  color: var(--lv-primario);
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-weight: 600;
-  font-size: 0.9rem;
-  box-shadow: var(--sombra-suave);
+  transition: all 0.2s ease;
 }
 
 .lv-cat-tile:hover {
-  background-color: var(--color-primario);
+  background: var(--lv-primario);
   color: #fff;
-  text-decoration: none;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(44, 62, 80, 0.18);
 }
 
-.lv-cat-tile span[uk-icon] {
+.lv-cat-tile i {
   display: block;
-  margin-bottom: 10px;
-  color: var(--color-acento);
+  margin-bottom: 0.5rem;
+  color: var(--lv-acento);
 }
 
-.lv-cat-tile:hover span[uk-icon] {
-  color: var(--color-dorado);
+.lv-cat-tile:hover i {
+  color: var(--lv-dorado);
 }
 
-/* ---------- Títulos de sección ---------- */
-.lv-section-title {
+.lv-hero {
+  background: linear-gradient(135deg, #2c3e50 0%, #4a6278 100%);
+  color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.lv-hero .carousel-item {
+  min-height: 320px;
+  padding: 3rem 2.5rem;
+}
+
+.lv-hero h1 {
   font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 1.5rem;
   font-weight: 700;
-  color: var(--color-primario);
-  border-left: 5px solid var(--color-acento);
-  padding-left: 14px;
-  margin-bottom: 24px;
 }
 
-main.uk-container {
-  padding-bottom: 20px;
+.lv-sidebar {
+  background: #fff;
+  border: 1px solid #e2ddd2;
+  border-radius: 12px;
+  padding: 1.25rem;
 }
 
-/* ---------- Pie de página ---------- */
+.lv-sidebar h3 {
+  border-bottom: 2px solid var(--lv-acento);
+  padding-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
 .lv-footer {
-  background-color: var(--color-primario);
+  background-color: var(--lv-primario);
   color: #cdd4da;
-  padding: 40px 0 20px;
-  margin-top: 50px;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 0.9rem;
 }
 
-.lv-footer h4 {
+.lv-footer h5 {
   color: #fff;
 }
 
 .lv-footer a {
   color: #cdd4da;
+  text-decoration: none;
 }
 
 .lv-footer a:hover {
   color: #fff;
-  text-decoration: none;
 }
 
-.lv-footer-bottom {
-  border-top: 1px solid #46586b;
-  margin-top: 24px;
-  padding-top: 16px;
-  text-align: center;
-  font-size: 0.8rem;
-  color: #95a5a6;
-}
-
-/* ---------- Resumen de compra ---------- */
-.lv-summary {
-  background-color: var(--color-tarjeta);
-  border: 1px solid #e2ddd2;
-  border-radius: var(--radio);
-  padding: 20px;
-}
-
-.lv-summary-total {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: var(--color-acento);
-}
-
-/* ---------- Utilidades ---------- */
-.lv-mono {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+.lv-detail-cover {
+  max-height: 480px;
+  object-fit: cover;
 }
