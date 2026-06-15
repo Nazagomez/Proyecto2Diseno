@@ -1,0 +1,22 @@
+{
+  "id": 3,
+  "name": "Don Quijote de la Mancha",
+  "titulo": "Don Quijote de la Mancha",
+  "category": "Novela",
+  "categoria": "Novela",
+  "autor": "Miguel de Cervantes",
+  "editorial": "Alfaguara",
+  "price": 12000,
+  "precio": 12000,
+  "moneda": "CRC",
+  "idioma": "Español",
+  "formato": "Físico",
+  "paginas": 863,
+  "isbn": "9788420412146",
+  "anio": 1605,
+  "stock": 8,
+  "estado": "Disponible",
+  "imagen": "images/don_quijote.jpg",
+  "description": "Obra clásica de la literatura española sobre las aventuras de Don Quijote y Sancho Panza",
+  "descripcion": "Obra clásica de la literatura española sobre las aventuras de Don Quijote y Sancho Panza"
+}

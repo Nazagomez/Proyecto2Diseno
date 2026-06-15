@@ -1,0 +1,22 @@
+{
+  "id": 25,
+  "name": "It",
+  "titulo": "It",
+  "category": "Terror",
+  "categoria": "Terror",
+  "autor": "Stephen King",
+  "editorial": "Debolsillo",
+  "price": 13500,
+  "precio": 13500,
+  "moneda": "CRC",
+  "idioma": "Español",
+  "formato": "Físico",
+  "paginas": 1504,
+  "isbn": "9788497593793",
+  "anio": 1986,
+  "stock": 4,
+  "estado": "Disponible",
+  "imagen": "images/it.jpg",
+  "description": "Novela de terror sobre una entidad que atemoriza a un grupo de niños",
+  "descripcion": "Novela de terror sobre una entidad que atemoriza a un grupo de niños"
+}

@@ -1,0 +1,22 @@
+{
+  "id": 7,
+  "name": "Harry Potter y la piedra filosofal",
+  "titulo": "Harry Potter y la piedra filosofal",
+  "category": "Fantasía",
+  "categoria": "Fantasía",
+  "autor": "J.K. Rowling",
+  "editorial": "Salamandra",
+  "price": 9500,
+  "precio": 9500,
+  "moneda": "CRC",
+  "idioma": "Español",
+  "formato": "Físico",
+  "paginas": 256,
+  "isbn": "9788478884452",
+  "anio": 1997,
+  "stock": 18,
+  "estado": "Disponible",
+  "imagen": "images/harry_potter_piedra_filosofal.jpg",
+  "description": "Primer libro de la saga donde Harry descubre que es mago",
+  "descripcion": "Primer libro de la saga donde Harry descubre que es mago"
+}

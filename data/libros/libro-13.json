@@ -1,0 +1,22 @@
+{
+  "id": 13,
+  "name": "Los juegos del hambre",
+  "titulo": "Los juegos del hambre",
+  "category": "Ciencia ficción",
+  "categoria": "Ciencia ficción",
+  "autor": "Suzanne Collins",
+  "editorial": "RBA",
+  "price": 8700,
+  "precio": 8700,
+  "moneda": "CRC",
+  "idioma": "Español",
+  "formato": "Físico",
+  "paginas": 400,
+  "isbn": "9788427202122",
+  "anio": 2008,
+  "stock": 11,
+  "estado": "Disponible",
+  "imagen": "images/juegos_hambre.jpg",
+  "description": "Novela juvenil distópica sobre supervivencia y control social",
+  "descripcion": "Novela juvenil distópica sobre supervivencia y control social"
+}

@@ -1,0 +1,22 @@
+{
+  "id": 30,
+  "name": "El arte de la guerra",
+  "titulo": "El arte de la guerra",
+  "category": "Historia",
+  "categoria": "Historia",
+  "autor": "Sun Tzu",
+  "editorial": "Obelisco",
+  "price": 5900,
+  "precio": 5900,
+  "moneda": "CRC",
+  "idioma": "Español",
+  "formato": "Físico",
+  "paginas": 128,
+  "isbn": "9788497776097",
+  "anio": 500,
+  "stock": 18,
+  "estado": "Disponible",
+  "imagen": "images/arte_guerra.jpg",
+  "description": "Obra clásica sobre estrategia liderazgo y toma de decisiones",
+  "descripcion": "Obra clásica sobre estrategia liderazgo y toma de decisiones"
+}

@@ -1,0 +1,22 @@
+{
+  "id": 29,
+  "name": "HTML and CSS Design and Build Websites",
+  "titulo": "HTML and CSS Design and Build Websites",
+  "category": "Tecnología",
+  "categoria": "Tecnología",
+  "autor": "Jon Duckett",
+  "editorial": "Wiley",
+  "price": 17500,
+  "precio": 17500,
+  "moneda": "CRC",
+  "idioma": "Inglés",
+  "formato": "Físico",
+  "paginas": 490,
+  "isbn": "9781118008188",
+  "anio": 2011,
+  "stock": 9,
+  "estado": "Disponible",
+  "imagen": "images/html_css_duckett.jpg",
+  "description": "Guía visual para aprender estructura y estilos de sitios web",
+  "descripcion": "Guía visual para aprender estructura y estilos de sitios web"
+}

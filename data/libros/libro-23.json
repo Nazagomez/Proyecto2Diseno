@@ -1,0 +1,22 @@
+{
+  "id": 23,
+  "name": "Ángeles y demonios",
+  "titulo": "Ángeles y demonios",
+  "category": "Suspenso",
+  "categoria": "Suspenso",
+  "autor": "Dan Brown",
+  "editorial": "Planeta",
+  "price": 8900,
+  "precio": 8900,
+  "moneda": "CRC",
+  "idioma": "Español",
+  "formato": "Físico",
+  "paginas": 608,
+  "isbn": "9788408054991",
+  "anio": 2000,
+  "stock": 8,
+  "estado": "Disponible",
+  "imagen": "images/angeles_demonios.jpg",
+  "description": "Novela de suspenso protagonizada por Robert Langdon",
+  "descripcion": "Novela de suspenso protagonizada por Robert Langdon"
+}

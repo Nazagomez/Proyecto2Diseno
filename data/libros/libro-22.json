@@ -1,0 +1,22 @@
+{
+  "id": 22,
+  "name": "El código Da Vinci",
+  "titulo": "El código Da Vinci",
+  "category": "Suspenso",
+  "categoria": "Suspenso",
+  "autor": "Dan Brown",
+  "editorial": "Planeta",
+  "price": 8900,
+  "precio": 8900,
+  "moneda": "CRC",
+  "idioma": "Español",
+  "formato": "Físico",
+  "paginas": 656,
+  "isbn": "9788408172176",
+  "anio": 2003,
+  "stock": 13,
+  "estado": "Disponible",
+  "imagen": "images/codigo_da_vinci.jpg",
+  "description": "Novela de misterio sobre símbolos secretos arte e historia",
+  "descripcion": "Novela de misterio sobre símbolos secretos arte e historia"
+}

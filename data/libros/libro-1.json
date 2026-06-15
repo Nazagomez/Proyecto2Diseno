@@ -1,0 +1,22 @@
+{
+  "id": 1,
+  "name": "Cien años de soledad",
+  "titulo": "Cien años de soledad",
+  "category": "Novela",
+  "categoria": "Novela",
+  "autor": "Gabriel García Márquez",
+  "editorial": "Editorial Sudamericana",
+  "price": 8500,
+  "precio": 8500,
+  "moneda": "CRC",
+  "idioma": "Español",
+  "formato": "Físico",
+  "paginas": 471,
+  "isbn": "9780307474728",
+  "anio": 1967,
+  "stock": 12,
+  "estado": "Disponible",
+  "imagen": "images/cien_anos_soledad.jpg",
+  "description": "Novela representativa del realismo mágico que narra la historia de la familia Buendía",
+  "descripcion": "Novela representativa del realismo mágico que narra la historia de la familia Buendía"
+}

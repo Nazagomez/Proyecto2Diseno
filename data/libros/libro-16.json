@@ -1,0 +1,22 @@
+{
+  "id": 16,
+  "name": "Hábitos atómicos",
+  "titulo": "Hábitos atómicos",
+  "category": "Autoayuda",
+  "categoria": "Autoayuda",
+  "autor": "James Clear",
+  "editorial": "Diana Editorial",
+  "price": 10500,
+  "precio": 10500,
+  "moneda": "CRC",
+  "idioma": "Español",
+  "formato": "Físico",
+  "paginas": 336,
+  "isbn": "9786077476713",
+  "anio": 2018,
+  "stock": 20,
+  "estado": "Disponible",
+  "imagen": "images/habitos_atomicos.jpg",
+  "description": "Libro de desarrollo personal sobre pequeños hábitos y mejora continua",
+  "descripcion": "Libro de desarrollo personal sobre pequeños hábitos y mejora continua"
+}

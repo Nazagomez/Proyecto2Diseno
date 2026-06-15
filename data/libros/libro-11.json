@@ -1,0 +1,22 @@
+{
+  "id": 11,
+  "name": "Orgullo y prejuicio",
+  "titulo": "Orgullo y prejuicio",
+  "category": "Romance",
+  "categoria": "Romance",
+  "autor": "Jane Austen",
+  "editorial": "Alma",
+  "price": 7200,
+  "precio": 7200,
+  "moneda": "CRC",
+  "idioma": "Español",
+  "formato": "Físico",
+  "paginas": 432,
+  "isbn": "9788418008054",
+  "anio": 1813,
+  "stock": 13,
+  "estado": "Disponible",
+  "imagen": "images/orgullo_prejuicio.jpg",
+  "description": "Novela romántica clásica sobre Elizabeth Bennet y el señor Darcy",
+  "descripcion": "Novela romántica clásica sobre Elizabeth Bennet y el señor Darcy"
+}

@@ -1,0 +1,22 @@
+{
+  "id": 24,
+  "name": "La chica del tren",
+  "titulo": "La chica del tren",
+  "category": "Suspenso",
+  "categoria": "Suspenso",
+  "autor": "Paula Hawkins",
+  "editorial": "Planeta",
+  "price": 8500,
+  "precio": 8500,
+  "moneda": "CRC",
+  "idioma": "Español",
+  "formato": "Físico",
+  "paginas": 496,
+  "isbn": "9788408141479",
+  "anio": 2015,
+  "stock": 7,
+  "estado": "Disponible",
+  "imagen": "images/chica_del_tren.jpg",
+  "description": "Thriller psicológico sobre una mujer que observa una desaparición desde el tren",
+  "descripcion": "Thriller psicológico sobre una mujer que observa una desaparición desde el tren"
+}

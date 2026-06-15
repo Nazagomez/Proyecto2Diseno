@@ -1,0 +1,22 @@
+{
+  "id": 27,
+  "name": "Programación en Java",
+  "titulo": "Programación en Java",
+  "category": "Tecnología",
+  "categoria": "Tecnología",
+  "autor": "Herbert Schildt",
+  "editorial": "McGraw Hill",
+  "price": 18500,
+  "precio": 18500,
+  "moneda": "CRC",
+  "idioma": "Español",
+  "formato": "Físico",
+  "paginas": 720,
+  "isbn": "9786071514121",
+  "anio": 2019,
+  "stock": 5,
+  "estado": "Disponible",
+  "imagen": "images/programacion_java.jpg",
+  "description": "Libro introductorio sobre conceptos de programación usando Java",
+  "descripcion": "Libro introductorio sobre conceptos de programación usando Java"
+}

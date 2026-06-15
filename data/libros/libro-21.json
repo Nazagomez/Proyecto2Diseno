@@ -1,0 +1,22 @@
+{
+  "id": 21,
+  "name": "Homo Deus",
+  "titulo": "Homo Deus",
+  "category": "Historia",
+  "categoria": "Historia",
+  "autor": "Yuval Noah Harari",
+  "editorial": "Debate",
+  "price": 11900,
+  "precio": 11900,
+  "moneda": "CRC",
+  "idioma": "Español",
+  "formato": "Físico",
+  "paginas": 496,
+  "isbn": "9788499926711",
+  "anio": 2015,
+  "stock": 10,
+  "estado": "Disponible",
+  "imagen": "images/homo_deus.jpg",
+  "description": "Análisis sobre el futuro de la humanidad la tecnología y la inteligencia artificial",
+  "descripcion": "Análisis sobre el futuro de la humanidad la tecnología y la inteligencia artificial"
+}

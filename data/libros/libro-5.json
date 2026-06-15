@@ -1,0 +1,22 @@
+{
+  "id": 5,
+  "name": "Rebelión en la granja",
+  "titulo": "Rebelión en la granja",
+  "category": "Novela",
+  "categoria": "Novela",
+  "autor": "George Orwell",
+  "editorial": "Debolsillo",
+  "price": 6200,
+  "precio": 6200,
+  "moneda": "CRC",
+  "idioma": "Español",
+  "formato": "Físico",
+  "paginas": 144,
+  "isbn": "9788499890951",
+  "anio": 1945,
+  "stock": 17,
+  "estado": "Disponible",
+  "imagen": "images/rebelion_granja.jpg",
+  "description": "Fábula política sobre el poder la corrupción y la manipulación social",
+  "descripcion": "Fábula política sobre el poder la corrupción y la manipulación social"
+}

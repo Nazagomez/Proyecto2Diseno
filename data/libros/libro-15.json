@@ -1,0 +1,22 @@
+{
+  "id": 15,
+  "name": "Sinsajo",
+  "titulo": "Sinsajo",
+  "category": "Ciencia ficción",
+  "categoria": "Ciencia ficción",
+  "autor": "Suzanne Collins",
+  "editorial": "RBA",
+  "price": 8700,
+  "precio": 8700,
+  "moneda": "CRC",
+  "idioma": "Español",
+  "formato": "Físico",
+  "paginas": 424,
+  "isbn": "9788427202146",
+  "anio": 2010,
+  "stock": 6,
+  "estado": "Disponible",
+  "imagen": "images/sinsajo.jpg",
+  "description": "Tercera parte de la trilogía Los juegos del hambre",
+  "descripcion": "Tercera parte de la trilogía Los juegos del hambre"
+}

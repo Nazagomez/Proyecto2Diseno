@@ -1,0 +1,22 @@
+{
+  "id": 10,
+  "name": "El señor de los anillos La comunidad del anillo",
+  "titulo": "El señor de los anillos La comunidad del anillo",
+  "category": "Fantasía",
+  "categoria": "Fantasía",
+  "autor": "J.R.R. Tolkien",
+  "editorial": "Minotauro",
+  "price": 11500,
+  "precio": 11500,
+  "moneda": "CRC",
+  "idioma": "Español",
+  "formato": "Físico",
+  "paginas": 576,
+  "isbn": "9788445000664",
+  "anio": 1954,
+  "stock": 9,
+  "estado": "Disponible",
+  "imagen": "images/la_comunidad_del_anillo.jpg",
+  "description": "Primera parte de la aventura para destruir el Anillo Único",
+  "descripcion": "Primera parte de la aventura para destruir el Anillo Único"
+}

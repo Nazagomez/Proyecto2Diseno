@@ -1,0 +1,22 @@
+{
+  "id": 6,
+  "name": "Fahrenheit 451",
+  "titulo": "Fahrenheit 451",
+  "category": "Ciencia ficción",
+  "categoria": "Ciencia ficción",
+  "autor": "Ray Bradbury",
+  "editorial": "Minotauro",
+  "price": 7900,
+  "precio": 7900,
+  "moneda": "CRC",
+  "idioma": "Español",
+  "formato": "Físico",
+  "paginas": 256,
+  "isbn": "9788445074870",
+  "anio": 1953,
+  "stock": 10,
+  "estado": "Disponible",
+  "imagen": "images/fahrenheit_451.jpg",
+  "description": "Novela distópica donde los libros son prohibidos y quemados por el Estado",
+  "descripcion": "Novela distópica donde los libros son prohibidos y quemados por el Estado"
+}

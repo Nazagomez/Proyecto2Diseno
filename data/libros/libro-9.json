@@ -1,0 +1,22 @@
+{
+  "id": 9,
+  "name": "El Hobbit",
+  "titulo": "El Hobbit",
+  "category": "Fantasía",
+  "categoria": "Fantasía",
+  "autor": "J.R.R. Tolkien",
+  "editorial": "Minotauro",
+  "price": 8900,
+  "precio": 8900,
+  "moneda": "CRC",
+  "idioma": "Español",
+  "formato": "Físico",
+  "paginas": 320,
+  "isbn": "9788445000657",
+  "anio": 1937,
+  "stock": 16,
+  "estado": "Disponible",
+  "imagen": "images/el_hobbit.jpg",
+  "description": "Historia de Bilbo Bolsón y su viaje junto a un grupo de enanos",
+  "descripcion": "Historia de Bilbo Bolsón y su viaje junto a un grupo de enanos"
+}

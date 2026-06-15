@@ -1,0 +1,22 @@
+{
+  "id": 2,
+  "name": "El Principito",
+  "titulo": "El Principito",
+  "category": "Infantil",
+  "categoria": "Infantil",
+  "autor": "Antoine de Saint-Exupéry",
+  "editorial": "Salamandra",
+  "price": 5500,
+  "precio": 5500,
+  "moneda": "CRC",
+  "idioma": "Español",
+  "formato": "Físico",
+  "paginas": 96,
+  "isbn": "9780156012195",
+  "anio": 1943,
+  "stock": 20,
+  "estado": "Disponible",
+  "imagen": "images/el_principito.jpg",
+  "description": "Relato filosófico y poético sobre la amistad la infancia y el sentido de la vida",
+  "descripcion": "Relato filosófico y poético sobre la amistad la infancia y el sentido de la vida"
+}

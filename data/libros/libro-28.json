@@ -1,0 +1,22 @@
+{
+  "id": 28,
+  "name": "Clean Code",
+  "titulo": "Clean Code",
+  "category": "Tecnología",
+  "categoria": "Tecnología",
+  "autor": "Robert C. Martin",
+  "editorial": "Prentice Hall",
+  "price": 22000,
+  "precio": 22000,
+  "moneda": "CRC",
+  "idioma": "Inglés",
+  "formato": "Físico",
+  "paginas": 464,
+  "isbn": "9780132350884",
+  "anio": 2008,
+  "stock": 6,
+  "estado": "Disponible",
+  "imagen": "images/clean_code.jpg",
+  "description": "Libro sobre buenas prácticas para escribir código limpio y mantenible",
+  "descripcion": "Libro sobre buenas prácticas para escribir código limpio y mantenible"
+}

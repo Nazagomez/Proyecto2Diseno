@@ -1,0 +1,22 @@
+{
+  "id": 17,
+  "name": "El poder del ahora",
+  "titulo": "El poder del ahora",
+  "category": "Autoayuda",
+  "categoria": "Autoayuda",
+  "autor": "Eckhart Tolle",
+  "editorial": "Gaia Ediciones",
+  "price": 9800,
+  "precio": 9800,
+  "moneda": "CRC",
+  "idioma": "Español",
+  "formato": "Físico",
+  "paginas": 256,
+  "isbn": "9788484452063",
+  "anio": 1997,
+  "stock": 9,
+  "estado": "Disponible",
+  "imagen": "images/poder_del_ahora.jpg",
+  "description": "Libro de crecimiento personal sobre conciencia y vida en el presente",
+  "descripcion": "Libro de crecimiento personal sobre conciencia y vida en el presente"
+}

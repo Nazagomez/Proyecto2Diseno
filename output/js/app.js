@@ -64,7 +64,7 @@ function renderBookCard(libro) {
           '<span class="badge text-bg-secondary mb-2">' + escapeHtml(libro.categoria) + '</span>' +
           '<div class="mt-auto d-flex justify-content-between align-items-center">' +
             '<span class="lv-price">' + formatPrecio(libro.precio) + '</span>' +
-            '<a href="detalle.html?id=' + libro.id + '" class="btn btn-outline-primary btn-sm">Detalle</a>' +
+            '<a href="libros/libro-' + libro.id + '.html" class="btn btn-outline-primary btn-sm">Detalle</a>' +
           '</div>' +
         '</div>' +
       '</div>' +
@@ -109,7 +109,7 @@ function initIndex() {
       const icono = iconos[cat] || 'bi-bookmark';
       return (
         '<div class="col-6 col-md-4 col-lg-2">' +
-          '<a href="catalogo.html?categoria=' + encodeURIComponent(cat) + '" class="lv-cat-tile text-decoration-none">' +
+          '<a href="libros/index.html" class="lv-cat-tile text-decoration-none">' +
             '<i class="bi ' + icono + ' fs-2"></i>' +
             '<span>' + escapeHtml(cat) + '</span>' +
           '</a>' +

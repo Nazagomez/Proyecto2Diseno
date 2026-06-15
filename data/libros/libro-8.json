@@ -1,0 +1,22 @@
+{
+  "id": 8,
+  "name": "Harry Potter y la cámara secreta",
+  "titulo": "Harry Potter y la cámara secreta",
+  "category": "Fantasía",
+  "categoria": "Fantasía",
+  "autor": "J.K. Rowling",
+  "editorial": "Salamandra",
+  "price": 9800,
+  "precio": 9800,
+  "moneda": "CRC",
+  "idioma": "Español",
+  "formato": "Físico",
+  "paginas": 288,
+  "isbn": "9788478884957",
+  "anio": 1998,
+  "stock": 14,
+  "estado": "Disponible",
+  "imagen": "images/harry_potter_camara_secreta.jpg",
+  "description": "Segunda aventura de Harry Potter en Hogwarts",
+  "descripcion": "Segunda aventura de Harry Potter en Hogwarts"
+}

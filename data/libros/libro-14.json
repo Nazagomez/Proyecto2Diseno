@@ -1,0 +1,22 @@
+{
+  "id": 14,
+  "name": "En llamas",
+  "titulo": "En llamas",
+  "category": "Ciencia ficción",
+  "categoria": "Ciencia ficción",
+  "autor": "Suzanne Collins",
+  "editorial": "RBA",
+  "price": 8700,
+  "precio": 8700,
+  "moneda": "CRC",
+  "idioma": "Español",
+  "formato": "Físico",
+  "paginas": 416,
+  "isbn": "9788427202139",
+  "anio": 2009,
+  "stock": 8,
+  "estado": "Disponible",
+  "imagen": "images/en_llamas.jpg",
+  "description": "Segunda parte de la trilogía Los juegos del hambre",
+  "descripcion": "Segunda parte de la trilogía Los juegos del hambre"
+}

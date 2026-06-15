@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Librería Letras Vivas | Catálogo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+  <header>
+    <div class="lv-topbar py-3">
+      <div class="container">
+        <div class="row align-items-center g-2">
+          <div class="col-auto">
+            <a href="../index.html" class="lv-logo text-decoration-none d-flex align-items-center gap-2">
+              <i class="bi bi-bookmark-fill fs-3 text-warning"></i>
+              <span>Librería Letras Vivas<small>Tu librería en línea</small></span>
+            </a>
+          </div>
+          <div class="col">
+            <form class="d-flex" action="../busqueda.html" method="get">
+              <input class="form-control rounded-pill" type="search" name="q" placeholder="Buscar libro, autor, categoría..." />
+              <button class="btn btn-light ms-2 rounded-pill" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+          <div class="col-auto">
+            <a href="../carrito.html" class="btn btn-outline-light">
+              <i class="bi bi-cart3"></i> Carrito <span class="badge text-bg-danger">3</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark lv-navbar lv-sans">
+      <div class="container">
+        <div class="collapse navbar-collapse show">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active" href="index.html">Catálogo</a></li>
+            <li class="nav-item"><a class="nav-link" href="../busqueda.html">Búsqueda</a></li>
+            <li class="nav-item"><a class="nav-link" href="../carrito.html">Carrito</a></li>
+            <li class="nav-item"><a class="nav-link" href="../facturacion.html">Facturación</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<div class="lv-breadcrumb-bar py-2 lv-sans">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+        <li class="breadcrumb-item active">Catálogo</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<main class="container my-4">
+  <div class="row g-4">
+    <aside class="col-lg-3">
+      <div class="lv-sidebar lv-sans">
+        <h3>Categorías</h3>
+        <div class="list-group">
+          <a href="index.html" class="list-group-item list-group-item-action active">Todas</a>
+          <span class="list-group-item">Autoayuda</span><span class="list-group-item">Ciencia ficción</span><span class="list-group-item">Educación</span><span class="list-group-item">Fantasía</span><span class="list-group-item">Historia</span><span class="list-group-item">Infantil</span><span class="list-group-item">Novela</span><span class="list-group-item">Romance</span><span class="list-group-item">Suspenso</span><span class="list-group-item">Tecnología</span><span class="list-group-item">Terror</span>
+        </div>
+
+        <hr />
+
+        <h3>Idiomas</h3>
+        <div class="list-group">
+          <span class="list-group-item">Español</span><span class="list-group-item">Inglés</span>
+        </div>
+      </div>
+    </aside>
+
+    <div class="col-lg-9">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="lv-section-title mb-0">Todos los libros</h2>
+        <span class="text-muted lv-sans small">30 títulos en catálogo</span>
+      </div>
+
+      <div class="row g-3">
+        
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card lv-book-card h-100">
+        <img src="../images/cien_anos_soledad.jpg" class="card-img-top lv-book-cover" alt="Cien años de soledad" onerror="this.src='../images/placeholder.svg'" />
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title h6 lv-book-title">Cien años de soledad</h3>
+          <p class="card-text text-muted small mb-1">Gabriel García Márquez</p>
+          <span class="badge text-bg-secondary mb-2">Novela</span>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="lv-price">₡8 500</span>
+            <a href="libro-1.html" class="btn btn-outline-primary btn-sm">Detalle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card lv-book-card h-100">
+        <img src="../images/el_principito.jpg" class="card-img-top lv-book-cover" alt="El Principito" onerror="this.src='../images/placeholder.svg'" />
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title h6 lv-book-title">El Principito</h3>
+          <p class="card-text text-muted small mb-1">Antoine de Saint-Exupéry</p>
+          <span class="badge text-bg-secondary mb-2">Infantil</span>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="lv-price">₡5 500</span>
+            <a href="libro-2.html" class="btn btn-outline-primary btn-sm">Detalle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card lv-book-card h-100">
+        <img src="../images/don_quijote.jpg" class="card-img-top lv-book-cover" alt="Don Quijote de la Mancha" onerror="this.src='../images/placeholder.svg'" />
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title h6 lv-book-title">Don Quijote de la Mancha</h3>
+          <p class="card-text text-muted small mb-1">Miguel de Cervantes</p>
+          <span class="badge text-bg-secondary mb-2">Novela</span>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="lv-price">₡12 000</span>
+            <a href="libro-3.html" class="btn btn-outline-primary btn-sm">Detalle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card lv-book-card h-100">
+        <img src="../images/1984.jpg" class="card-img-top lv-book-cover" alt="1984" onerror="this.src='../images/placeholder.svg'" />
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title h6 lv-book-title">1984</h3>
+          <p class="card-text text-muted small mb-1">George Orwell</p>
+          <span class="badge text-bg-secondary mb-2">Ciencia ficción</span>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="lv-price">₡7 800</span>
+            <a href="libro-4.html" class="btn btn-outline-primary btn-sm">Detalle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card lv-book-card h-100">
+        <img src="../images/rebelion_granja.jpg" class="card-img-top lv-book-cover" alt="Rebelión en la granja" onerror="this.src='../images/placeholder.svg'" />
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title h6 lv-book-title">Rebelión en la granja</h3>
+          <p class="card-text text-muted small mb-1">George Orwell</p>
+          <span class="badge text-bg-secondary mb-2">Novela</span>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="lv-price">₡6 200</span>
+            <a href="libro-5.html" class="btn btn-outline-primary btn-sm">Detalle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card lv-book-card h-100">
+        <img src="../images/fahrenheit_451.jpg" class="card-img-top lv-book-cover" alt="Fahrenheit 451" onerror="this.src='../images/placeholder.svg'" />
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title h6 lv-book-title">Fahrenheit 451</h3>
+          <p class="card-text text-muted small mb-1">Ray Bradbury</p>
+          <span class="badge text-bg-secondary mb-2">Ciencia ficción</span>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="lv-price">₡7 900</span>
+            <a href="libro-6.html" class="btn btn-outline-primary btn-sm">Detalle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card lv-book-card h-100">
+        <img src="../images/harry_potter_piedra_filosofal.jpg" class="card-img-top lv-book-cover" alt="Harry Potter y la piedra filosofal" onerror="this.src='../images/placeholder.svg'" />
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title h6 lv-book-title">Harry Potter y la piedra filosofal</h3>
+          <p class="card-text text-muted small mb-1">J.K. Rowling</p>
+          <span class="badge text-bg-secondary mb-2">Fantasía</span>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="lv-price">₡9 500</span>
+            <a href="libro-7.html" class="btn btn-outline-primary btn-sm">Detalle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card lv-book-card h-100">
+        <img src="../images/harry_potter_camara_secreta.jpg" class="card-img-top lv-book-cover" alt="Harry Potter y la cámara secreta" onerror="this.src='../images/placeholder.svg'" />
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title h6 lv-book-title">Harry Potter y la cámara secreta</h3>
+          <p class="card-text text-muted small mb-1">J.K. Rowling</p>
+          <span class="badge text-bg-secondary mb-2">Fantasía</span>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="lv-price">₡9 800</span>
+            <a href="libro-8.html" class="btn btn-outline-primary btn-sm">Detalle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card lv-book-card h-100">
+        <img src="../images/el_hobbit.jpg" class="card-img-top lv-book-cover" alt="El Hobbit" onerror="this.src='../images/placeholder.svg'" />
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title h6 lv-book-title">El Hobbit</h3>
+          <p class="card-text text-muted small mb-1">J.R.R. Tolkien</p>
+          <span class="badge text-bg-secondary mb-2">Fantasía</span>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="lv-price">₡8 900</span>
+            <a href="libro-9.html" class="btn btn-outline-primary btn-sm">Detalle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card lv-book-card h-100">
+        <img src="../images/la_comunidad_del_anillo.jpg" class="card-img-top lv-book-cover" alt="El señor de los anillos La comunidad del anillo" onerror="this.src='../images/placeholder.svg'" />
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title h6 lv-book-title">El señor de los anillos La comunidad del anillo</h3>
+          <p class="card-text text-muted small mb-1">J.R.R. Tolkien</p>
+          <span class="badge text-bg-secondary mb-2">Fantasía</span>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="lv-price">₡11 500</span>
+            <a href="libro-10.html" class="btn btn-outline-primary btn-sm">Detalle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card lv-book-card h-100">
+        <img src="../images/orgullo_prejuicio.jpg" class="card-img-top lv-book-cover" alt="Orgullo y prejuicio" onerror="this.src='../images/placeholder.svg'" />
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title h6 lv-book-title">Orgullo y prejuicio</h3>
+          <p class="card-text text-muted small mb-1">Jane Austen</p>
+          <span class="badge text-bg-secondary mb-2">Romance</span>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="lv-price">₡7 200</span>
+            <a href="libro-11.html" class="btn btn-outline-primary btn-sm">Detalle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card lv-book-card h-100">
+        <img src="../images/jane_eyre.jpg" class="card-img-top lv-book-cover" alt="Jane Eyre" onerror="this.src='../images/placeholder.svg'" />
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title h6 lv-book-title">Jane Eyre</h3>
+          <p class="card-text text-muted small mb-1">Charlotte Brontë</p>
+          <span class="badge text-bg-secondary mb-2">Romance</span>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="lv-price">₡7 600</span>
+            <a href="libro-12.html" class="btn btn-outline-primary btn-sm">Detalle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card lv-book-card h-100">
+        <img src="../images/juegos_hambre.jpg" class="card-img-top lv-book-cover" alt="Los juegos del hambre" onerror="this.src='../images/placeholder.svg'" />
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title h6 lv-book-title">Los juegos del hambre</h3>
+          <p class="card-text text-muted small mb-1">Suzanne Collins</p>
+          <span class="badge text-bg-secondary mb-2">Ciencia ficción</span>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="lv-price">₡8 700</span>
+            <a href="libro-13.html" class="btn btn-outline-primary btn-sm">Detalle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card lv-book-card h-100">
+        <img src="../images/en_llamas.jpg" class="card-img-top lv-book-cover" alt="En llamas" onerror="this.src='../images/placeholder.svg'" />
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title h6 lv-book-title">En llamas</h3>
+          <p class="card-text text-muted small mb-1">Suzanne Collins</p>
+          <span class="badge text-bg-secondary mb-2">Ciencia ficción</span>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="lv-price">₡8 700</span>
+            <a href="libro-14.html" class="btn btn-outline-primary btn-sm">Detalle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card lv-book-card h-100">
+        <img src="../images/sinsajo.jpg" class="card-img-top lv-book-cover" alt="Sinsajo" onerror="this.src='../images/placeholder.svg'" />
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title h6 lv-book-title">Sinsajo</h3>
+          <p class="card-text text-muted small mb-1">Suzanne Collins</p>
+          <span class="badge text-bg-secondary mb-2">Ciencia ficción</span>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="lv-price">₡8 700</span>
+            <a href="libro-15.html" class="btn btn-outline-primary btn-sm">Detalle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card lv-book-card h-100">
+        <img src="../images/habitos_atomicos.jpg" class="card-img-top lv-book-cover" alt="Hábitos atómicos" onerror="this.src='../images/placeholder.svg'" />
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title h6 lv-book-title">Hábitos atómicos</h3>
+          <p class="card-text text-muted small mb-1">James Clear</p>
+          <span class="badge text-bg-secondary mb-2">Autoayuda</span>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="lv-price">₡10 500</span>
+            <a href="libro-16.html" class="btn btn-outline-primary btn-sm">Detalle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card lv-book-card h-100">
+        <img src="../images/poder_del_ahora.jpg" class="card-img-top lv-book-cover" alt="El poder del ahora" onerror="this.src='../images/placeholder.svg'" />
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title h6 lv-book-title">El poder del ahora</h3>
+          <p class="card-text text-muted small mb-1">Eckhart Tolle</p>
+          <span class="badge text-bg-secondary mb-2">Autoayuda</span>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="lv-price">₡9 800</span>
+            <a href="libro-17.html" class="btn btn-outline-primary btn-sm">Detalle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card lv-book-card h-100">
+        <img src="../images/padre_rico_padre_pobre.jpg" class="card-img-top lv-book-cover" alt="Padre rico padre pobre" onerror="this.src='../images/placeholder.svg'" />
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title h6 lv-book-title">Padre rico padre pobre</h3>
+          <p class="card-text text-muted small mb-1">Robert Kiyosaki</p>
+          <span class="badge text-bg-secondary mb-2">Educación</span>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="lv-price">₡9 900</span>
+            <a href="libro-18.html" class="btn btn-outline-primary btn-sm">Detalle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card lv-book-card h-100">
+        <img src="../images/steve_jobs.jpg" class="card-img-top lv-book-cover" alt="Steve Jobs" onerror="this.src='../images/placeholder.svg'" />
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title h6 lv-book-title">Steve Jobs</h3>
+          <p class="card-text text-muted small mb-1">Walter Isaacson</p>
+          <span class="badge text-bg-secondary mb-2">Historia</span>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="lv-price">₡12 500</span>
+            <a href="libro-19.html" class="btn btn-outline-primary btn-sm">Detalle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card lv-book-card h-100">
+        <img src="../images/sapiens.jpg" class="card-img-top lv-book-cover" alt="Sapiens De animales a dioses" onerror="this.src='../images/placeholder.svg'" />
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title h6 lv-book-title">Sapiens De animales a dioses</h3>
+          <p class="card-text text-muted small mb-1">Yuval Noah Harari</p>
+          <span class="badge text-bg-secondary mb-2">Historia</span>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="lv-price">₡11 800</span>
+            <a href="libro-20.html" class="btn btn-outline-primary btn-sm">Detalle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card lv-book-card h-100">
+        <img src="../images/homo_deus.jpg" class="card-img-top lv-book-cover" alt="Homo Deus" onerror="this.src='../images/placeholder.svg'" />
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title h6 lv-book-title">Homo Deus</h3>
+          <p class="card-text text-muted small mb-1">Yuval Noah Harari</p>
+          <span class="badge text-bg-secondary mb-2">Historia</span>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="lv-price">₡11 900</span>
+            <a href="libro-21.html" class="btn btn-outline-primary btn-sm">Detalle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card lv-book-card h-100">
+        <img src="../images/codigo_da_vinci.jpg" class="card-img-top lv-book-cover" alt="El código Da Vinci" onerror="this.src='../images/placeholder.svg'" />
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title h6 lv-book-title">El código Da Vinci</h3>
+          <p class="card-text text-muted small mb-1">Dan Brown</p>
+          <span class="badge text-bg-secondary mb-2">Suspenso</span>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="lv-price">₡8 900</span>
+            <a href="libro-22.html" class="btn btn-outline-primary btn-sm">Detalle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card lv-book-card h-100">
+        <img src="../images/angeles_demonios.jpg" class="card-img-top lv-book-cover" alt="Ángeles y demonios" onerror="this.src='../images/placeholder.svg'" />
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title h6 lv-book-title">Ángeles y demonios</h3>
+          <p class="card-text text-muted small mb-1">Dan Brown</p>
+          <span class="badge text-bg-secondary mb-2">Suspenso</span>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="lv-price">₡8 900</span>
+            <a href="libro-23.html" class="btn btn-outline-primary btn-sm">Detalle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card lv-book-card h-100">
+        <img src="../images/chica_del_tren.jpg" class="card-img-top lv-book-cover" alt="La chica del tren" onerror="this.src='../images/placeholder.svg'" />
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title h6 lv-book-title">La chica del tren</h3>
+          <p class="card-text text-muted small mb-1">Paula Hawkins</p>
+          <span class="badge text-bg-secondary mb-2">Suspenso</span>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="lv-price">₡8 500</span>
+            <a href="libro-24.html" class="btn btn-outline-primary btn-sm">Detalle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card lv-book-card h-100">
+        <img src="../images/it.jpg" class="card-img-top lv-book-cover" alt="It" onerror="this.src='../images/placeholder.svg'" />
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title h6 lv-book-title">It</h3>
+          <p class="card-text text-muted small mb-1">Stephen King</p>
+          <span class="badge text-bg-secondary mb-2">Terror</span>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="lv-price">₡13 500</span>
+            <a href="libro-25.html" class="btn btn-outline-primary btn-sm">Detalle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card lv-book-card h-100">
+        <img src="../images/carrie.jpg" class="card-img-top lv-book-cover" alt="Carrie" onerror="this.src='../images/placeholder.svg'" />
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title h6 lv-book-title">Carrie</h3>
+          <p class="card-text text-muted small mb-1">Stephen King</p>
+          <span class="badge text-bg-secondary mb-2">Terror</span>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="lv-price">₡7 200</span>
+            <a href="libro-26.html" class="btn btn-outline-primary btn-sm">Detalle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card lv-book-card h-100">
+        <img src="../images/programacion_java.jpg" class="card-img-top lv-book-cover" alt="Programación en Java" onerror="this.src='../images/placeholder.svg'" />
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title h6 lv-book-title">Programación en Java</h3>
+          <p class="card-text text-muted small mb-1">Herbert Schildt</p>
+          <span class="badge text-bg-secondary mb-2">Tecnología</span>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="lv-price">₡18 500</span>
+            <a href="libro-27.html" class="btn btn-outline-primary btn-sm">Detalle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card lv-book-card h-100">
+        <img src="../images/clean_code.jpg" class="card-img-top lv-book-cover" alt="Clean Code" onerror="this.src='../images/placeholder.svg'" />
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title h6 lv-book-title">Clean Code</h3>
+          <p class="card-text text-muted small mb-1">Robert C. Martin</p>
+          <span class="badge text-bg-secondary mb-2">Tecnología</span>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="lv-price">₡22 000</span>
+            <a href="libro-28.html" class="btn btn-outline-primary btn-sm">Detalle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card lv-book-card h-100">
+        <img src="../images/html_css_duckett.jpg" class="card-img-top lv-book-cover" alt="HTML and CSS Design and Build Websites" onerror="this.src='../images/placeholder.svg'" />
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title h6 lv-book-title">HTML and CSS Design and Build Websites</h3>
+          <p class="card-text text-muted small mb-1">Jon Duckett</p>
+          <span class="badge text-bg-secondary mb-2">Tecnología</span>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="lv-price">₡17 500</span>
+            <a href="libro-29.html" class="btn btn-outline-primary btn-sm">Detalle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card lv-book-card h-100">
+        <img src="../images/arte_guerra.jpg" class="card-img-top lv-book-cover" alt="El arte de la guerra" onerror="this.src='../images/placeholder.svg'" />
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title h6 lv-book-title">El arte de la guerra</h3>
+          <p class="card-text text-muted small mb-1">Sun Tzu</p>
+          <span class="badge text-bg-secondary mb-2">Historia</span>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="lv-price">₡5 900</span>
+            <a href="libro-30.html" class="btn btn-outline-primary btn-sm">Detalle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="lv-footer py-5 mt-5">
+  <div class="container text-center small">© 2026 Librería Letras Vivas. Todos los derechos reservados.</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

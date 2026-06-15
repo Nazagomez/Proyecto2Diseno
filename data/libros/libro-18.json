@@ -1,0 +1,22 @@
+{
+  "id": 18,
+  "name": "Padre rico padre pobre",
+  "titulo": "Padre rico padre pobre",
+  "category": "Educación",
+  "categoria": "Educación",
+  "autor": "Robert Kiyosaki",
+  "editorial": "Aguilar",
+  "price": 9900,
+  "precio": 9900,
+  "moneda": "CRC",
+  "idioma": "Español",
+  "formato": "Físico",
+  "paginas": 240,
+  "isbn": "9781612680194",
+  "anio": 1997,
+  "stock": 15,
+  "estado": "Disponible",
+  "imagen": "images/padre_rico_padre_pobre.jpg",
+  "description": "Libro sobre educación financiera y mentalidad económica",
+  "descripcion": "Libro sobre educación financiera y mentalidad económica"
+}

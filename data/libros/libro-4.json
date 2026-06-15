@@ -1,0 +1,22 @@
+{
+  "id": 4,
+  "name": "1984",
+  "titulo": "1984",
+  "category": "Ciencia ficción",
+  "categoria": "Ciencia ficción",
+  "autor": "George Orwell",
+  "editorial": "Debolsillo",
+  "price": 7800,
+  "precio": 7800,
+  "moneda": "CRC",
+  "idioma": "Español",
+  "formato": "Físico",
+  "paginas": 352,
+  "isbn": "9788499890944",
+  "anio": 1949,
+  "stock": 15,
+  "estado": "Disponible",
+  "imagen": "images/1984.jpg",
+  "description": "Novela distópica sobre vigilancia control social y manipulación política",
+  "descripcion": "Novela distópica sobre vigilancia control social y manipulación política"
+}

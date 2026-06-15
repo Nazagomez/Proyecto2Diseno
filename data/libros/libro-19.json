@@ -1,0 +1,22 @@
+{
+  "id": 19,
+  "name": "Steve Jobs",
+  "titulo": "Steve Jobs",
+  "category": "Historia",
+  "categoria": "Historia",
+  "autor": "Walter Isaacson",
+  "editorial": "Debate",
+  "price": 12500,
+  "precio": 12500,
+  "moneda": "CRC",
+  "idioma": "Español",
+  "formato": "Físico",
+  "paginas": 744,
+  "isbn": "9788499921181",
+  "anio": 2011,
+  "stock": 5,
+  "estado": "Disponible",
+  "imagen": "images/steve_jobs.jpg",
+  "description": "Biografía del fundador de Apple basada en entrevistas y testimonios",
+  "descripcion": "Biografía del fundador de Apple basada en entrevistas y testimonios"
+}

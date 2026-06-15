@@ -1,0 +1,22 @@
+{
+  "id": 20,
+  "name": "Sapiens De animales a dioses",
+  "titulo": "Sapiens De animales a dioses",
+  "category": "Historia",
+  "categoria": "Historia",
+  "autor": "Yuval Noah Harari",
+  "editorial": "Debate",
+  "price": 11800,
+  "precio": 11800,
+  "moneda": "CRC",
+  "idioma": "Español",
+  "formato": "Físico",
+  "paginas": 496,
+  "isbn": "9788499926223",
+  "anio": 2011,
+  "stock": 12,
+  "estado": "Disponible",
+  "imagen": "images/sapiens.jpg",
+  "description": "Ensayo histórico sobre la evolución de la humanidad",
+  "descripcion": "Ensayo histórico sobre la evolución de la humanidad"
+}

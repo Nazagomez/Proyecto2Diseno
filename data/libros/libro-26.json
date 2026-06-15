@@ -1,0 +1,22 @@
+{
+  "id": 26,
+  "name": "Carrie",
+  "titulo": "Carrie",
+  "category": "Terror",
+  "categoria": "Terror",
+  "autor": "Stephen King",
+  "editorial": "Debolsillo",
+  "price": 7200,
+  "precio": 7200,
+  "moneda": "CRC",
+  "idioma": "Español",
+  "formato": "Físico",
+  "paginas": 256,
+  "isbn": "9788497595698",
+  "anio": 1974,
+  "stock": 6,
+  "estado": "Disponible",
+  "imagen": "images/carrie.jpg",
+  "description": "Novela de terror sobre una joven con poderes telequinéticos",
+  "descripcion": "Novela de terror sobre una joven con poderes telequinéticos"
+}

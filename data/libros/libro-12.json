@@ -1,0 +1,22 @@
+{
+  "id": 12,
+  "name": "Jane Eyre",
+  "titulo": "Jane Eyre",
+  "category": "Romance",
+  "categoria": "Romance",
+  "autor": "Charlotte Brontë",
+  "editorial": "Alma",
+  "price": 7600,
+  "precio": 7600,
+  "moneda": "CRC",
+  "idioma": "Español",
+  "formato": "Físico",
+  "paginas": 624,
+  "isbn": "9788418008061",
+  "anio": 1847,
+  "stock": 7,
+  "estado": "Disponible",
+  "imagen": "images/jane_eyre.jpg",
+  "description": "Novela de formación romance e independencia personal",
+  "descripcion": "Novela de formación romance e independencia personal"
+}
